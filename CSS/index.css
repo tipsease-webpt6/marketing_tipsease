@@ -168,6 +168,41 @@ textarea {
   overflow: auto;
   vertical-align: top;
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+p {
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.5rem;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.brand {
+  color: #773426;
+}
+.brand span {
+  color: #175602;
+}
 header {
   height: 80vh;
   display: flex;
@@ -177,4 +212,6 @@ header {
 }
 header .page-title {
   font-size: 4rem;
+  font-family: 'Abril Fatface', cursive;
+  margin-bottom: 2rem;
 }
