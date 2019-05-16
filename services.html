@@ -1,4 +1,4 @@
-<!DOCTYPE html
+<!-- <!DOCTYPE html
 <html>
 	<head>
 		<title>tipsease - services</title>
@@ -11,11 +11,504 @@
 	</head>
 	<body>
 		<!-- Body in here -->	
-        
+       
         
 
-        
+
         <!-- Scripts go here -->
 
 	</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tyler Turnipseed</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Roboto"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+    <!-- HEADER -->
+    <header id="home">
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class="header-title">
+            Tyler Turnipseed
+          </h1>
+          <p class="header-subtitle">
+            Web Developer
+          </p>
+          <div class="arrow-down">
+            <i class="animated bounce fa fa-chevron-down fa-4x"></i>
+          </div>
+          <!-- ./arrow-down -->
+        </div>
+        <!-- ./flex-column -->
+      </div>
+      <!-- ./container -->
+    </header>
+    <!-- ./header -->
+
+    <!-- STICKY NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-md">
+      <div class="container d-flex justify-content-between">
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <!-- Navbar Brand -->
+          <a class="navbar-brand" href="#">techTurnip</a>
+          <a
+            class="social-link"
+            href="https://github.com/techturnip"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            class="social-link"
+            href="https://twitter.com/tylertechseed"
+            target="_blank"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/tyler-turnipseed/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <!-- ./social-icons -->
+
+        <!-- Mobile Collapse Toggle -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            ><i class="fa fa-bars fa-lg" aria-hidden="true"></i
+          ></span></button
+        ><!-- ./navbar-toggler -->
+
+        <!-- Mobile Collapse Wrapper -->
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <!-- Navbar Items -->
+          <ul class="navbar-nav">
+            <!-- Nav Items > Links-->
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <!-- dropdown toggle -->
+              <a
+                id="resumeDropdown"
+                data-toggle="dropdown"
+                class="nav-link dropdown-toggle"
+                aria-haspopup="true"
+                aria-expanded="false"
+                href="#"
+                role="button"
+                >Resume</a
+              >
+
+              <div class="dropdown-menu" aria-labelledby="resumeDropdown">
+                <a href="#resume" class="dropdown-item">Resume</a>
+                <a href="#aboutMe" class="dropdown-item">About Me</a>
+                <a href="#workHistory" class="dropdown-item">Work History</a>
+              </div>
+              <!-- ./dropdown-menu -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- ./navbar-nav -->
+        </div>
+        <!-- ./collapse ./navbar-collapse -->
+      </div>
+      <!-- ./container -->
+    </nav>
+    <!-- ./navbar -->
+
+    <!-- BEGIN RESUME SECTION -->
+    <section id="resume" class="section">
+      <!-- Resume Header -->
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">
+            <span class="hide-sm">Check out my </span>Resume
+          </h3>
+        </div>
+        <!-- ./section-header -->
+      </div>
+      <!-- ./container -->
+
+      <!-- Resume Content -->
+      <div id="aboutMe" class="container">
+        <!-- About Me / Skills Box-->
+        <div class="content-box">
+          <!-- About Me Wrapper-->
+          <div class="about">
+            <!-- About Me Content-->
+            <div class="about-content">
+              <h4>About Me</h4>
+              <p>
+                I've been working with HTML/CSS for over a decade. I have
+                experience working with HTML & CSS frameworks such as Bootstrap
+                and Materialize CSS, content management systems such as
+                WordPress, and JavaScript libraries/frameworks like React and
+                Angular 2+.
+              </p>
+            </div>
+            <!-- About Image -->
+            <div class="about-media">
+              <img src="/img/me.jpg" alt="" class="me rounded-circle" />
+            </div>
+            <!-- ./about-media -->
+          </div>
+          <!-- ./about -->
+
+          <!-- Skills -->
+          <div class="row">
+            <div class="col">
+              <!-- My Skills -->
+              <h5>My Skills</h5>
+              <p>
+                <span class="badge badge-primary">HTML &amp; CSS</span>
+                <span class="badge badge-primary">JavaScript</span>
+                <span class="badge badge-primary">Responsive Design</span>
+                <span class="badge badge-primary">WordPress</span>
+                <span class="badge badge-primary">Bootstrap 4</span>
+                <span class="badge badge-primary">Materialize CSS</span>
+                <span class="badge badge-primary">Less &amp; Sass</span>
+                <span class="badge badge-primary">React</span>
+                <span class="badge badge-primary">Gulp</span>
+                <span class="badge badge-primary">Git</span>
+              </p>
+            </div>
+            <!-- ./col -->
+          </div>
+          <!-- ./row -->
+        </div>
+        <!-- ./content-box -->
+      </div>
+      <!-- ./container -->
+
+      <!-- Objective -->
+      <div class="container">
+        <div class="content-box">
+          <h5>Objective</h5>
+          <p>
+            Seeking a career transition into a Web Developer position within a
+            team-oriented work environment that will challenge and grow my
+            abilities as a Developer.
+          </p>
+        </div>
+      </div>
+      <!-- ./container ./content-box -->
+
+      <!-- Work History -->
+      <div id="workHistory" class="container">
+        <div class="content-box">
+          <h4 class="text-center">
+            Work History <i class="ml-3 animated wobble fas fa-hammer"></i>
+          </h4>
+        </div>
+      </div>
+
+      <!-- Work History Content -->
+      <div class="container">
+        <div class="content-box">
+          <div class="history-item">
+            <h6 class="history-title">
+              Field Technician <span>- Terracon - July 2017 - Current</span>
+            </h6>
+            <p>
+              Ability to work independently and as a part of a team to
+              accomplish tasks. Acute attention to detail to perform inspection
+              services. Exceptional time management and effective communication
+              with clients. Attained two raises in under 1 year through hard
+              work and determination. Ability to work 20+ hour shifts and weekly
+              hours in excess of 80 hours. Ability to learn on the fly with
+              immediate application of learned skills in a professional
+              environment.
+            </p>
+          </div>
+          <div class="history-item">
+            <h6 class="history-title">
+              Produce Associate/Manager
+              <span>- Kroger - October 2013 - July 2017</span>
+            </h6>
+            <p>
+              Managed a team of approximately 8 – 10 associates, task
+              delegation, training, scheduling and efficient salesfloor
+              operation. Maintain backroom organization and stock levels.
+              Achieved management position in approximately 1½ years.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <!-- Portfolio Header -->
+      <div id="portfolioLink" class="container-fluid portfolio-header">
+        <h3 class="portfolio-heading text-center">
+          <span class="hide-sm">Check Out My </span>Portfolio
+        </h3>
+      </div>
+      <!-- ./portfolio-header -->
+
+      <!-- Portfolio Content -->
+      <div class="portfolio-content">
+        <!-- Container -->
+        <div class="container-fluid">
+          <!-- Row -->
+          <div class="row">
+            <!-- Column -->
+            <div class="col-lg-4">
+              <!-- Card -->
+              <div class="card">
+                <!-- Card Image -->
+                <img
+                  src="img/contact-manager.png"
+                  alt="Screenshot of contact manager application"
+                  class="card-img-top"
+                />
+                <!-- Card Body -->
+                <div class="card-body">
+                  <h4 class="card-title">Contact Manager</h4>
+                  <p class="card-text">
+                    Contact Manager project is a CRUD app from the Modern Reeact
+                    course by Brad Traversy featuring the Materialize CSS
+                    framework with data automatically populated via the
+                    JSONPlaceholder api.
+                  </p>
+
+                  <p class="card-text tags">
+                    <strong>Tags:</strong>
+                    <span class="badge badge-primary">Materialize CSS</span>
+                    <span class="badge badge-primary">React</span>
+                    <span class="badge badge-primary">Git</span>
+                  </p>
+                  <!-- Card Buttons -->
+                  <a
+                    href="https://github.com/techturnip/contactmanager"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    View Code
+                  </a>
+                  <a
+                    href="https://techturnip.github.io/contactmanager/"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    View App
+                  </a>
+                </div>
+                <!-- ./card-body -->
+              </div>
+              <!-- ./card -->
+            </div>
+            <!-- ./col -->
+
+            <!-- Column -->
+            <div class="col-lg-4">
+              <!-- Card -->
+              <div class="card">
+                <!-- Card Image -->
+                <img
+                  src="img/great-idea.png"
+                  alt="Screenshot of contact manager application"
+                  class="card-img-top"
+                />
+                <!-- Card Body -->
+                <div class="card-body">
+                  <h4 class="card-title">Great Idea!</h4>
+                  <p class="card-text">
+                    Lambda School Project that explores responsive web design by
+                    leveraging media queries and flexbox to layout elements at
+                    different breakpoints throughout the website.
+                  </p>
+
+                  <p class="card-text tags">
+                    <strong>Tags:</strong>
+                    <span class="badge badge-primary">HTML &amp; CSS</span>
+                    <span class="badge badge-primary">Responsive Design</span>
+                    <span class="badge badge-primary">Git</span>
+                  </p>
+                  <!-- Card Buttons -->
+                  <a
+                    href="https://github.com/techturnip/responsive-web-design-I/tree/tyler-turnipseed"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    View Code
+                  </a>
+                  <a
+                    href="https://techturnip.github.io/responsive-web-design-I/"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    View Website
+                  </a>
+                </div>
+                <!-- ./card-body -->
+              </div>
+              <!-- ./card -->
+            </div>
+            <!-- ./col -->
+
+            <!-- Column -->
+            <div class="col-lg-4">
+              <!-- Card -->
+              <div class="card">
+                <!-- Card Image -->
+                <img
+                  src="img/resume-screenshot.png"
+                  alt="Screenshot of contact manager application"
+                  class="card-img-top"
+                />
+                <!-- Card Body -->
+                <div class="card-body">
+                  <h4 class="card-title">Digital Resume</h4>
+                  <p class="card-text">
+                    Lambda School Project that tasked me with leveraging the
+                    principles of CSS preprocessing by creating a Digital Resume
+                    of my own design using LESS.
+                  </p>
+
+                  <p class="card-text tags">
+                    <strong>Tags:</strong>
+                    <span class="badge badge-primary">HTML &amp; CSS</span>
+                    <span class="badge badge-primary">Responsive Design</span>
+                    <span class="badge badge-primary">Less</span>
+                    <span class="badge badge-primary">Git</span>
+                  </p>
+                  <!-- Card Buttons -->
+                  <a
+                    href="https://github.com/techturnip/Preprocessing-I/tree/tyler-turnipseed"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    View Code
+                  </a>
+                  <a
+                    href="http://tt-resume.surge.sh/"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    View Website
+                  </a>
+                </div>
+                <!-- ./card-body -->
+              </div>
+              <!-- ./card -->
+            </div>
+            <!-- ./col -->
+          </div>
+          <!-- ./row -->
+        </div>
+        <!-- ./container -->
+      </div>
+      <!-- ./portfolio-content -->
+    </section>
+    <!-- #/portfolio -->
+
+    <section id="contact">
+      <div class="container">
+        <h3>Contact Me</h3>
+      </div>
+
+      <div class="container">
+        <form action="https://formspree.io/tyler@techturnip.us" method="POST">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputName">Name</label>
+              <input
+                type="text"
+                name="name"
+                class="form-control form-control-lg"
+                id="inputName"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <input
+                type="email"
+                name="_replyto"
+                class="form-control form-control-lg"
+                id="inputEmail"
+                placeholder="Your Email"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputMessage">Message</label>
+            <textarea
+              type="text"
+              name="message"
+              class="form-control form-control-lg"
+              id="inputMessage"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-lg btn-block w-50 mx-auto btn-primary"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="text-center text-light">&copy; Tyler Turnipseed - 2019</p>
+    </footer>
+
+    <script src="/js/vendor/jquery-3.4.0.min.js"></script>
+    <script src="/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800
+      });
+    </script>
+  </body>
 </html>
