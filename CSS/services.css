@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.width-100 {
+  width: 100%;
+}
+.border-bottom-grey {
+  border-bottom: 1px solid lightgrey;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+@media (min-width: 1200px) {
+  .cards-container {
+    width: 1200px;
+  }
+}
+.cards-container .card {
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 24px;
+}
+.cards-container .card .workTitle {
+  text-align: center;
+  font-size: 25px;
+  font-family: Didot, serif;
+}
+.cards-container .card .worker {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.cards-container .card .worker .img-container {
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+.cards-container .card .worker .img-container img {
+  width: 100%;
+}
+.cards-container .card .worker p {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+body .container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body .container .header h1 {
+  font-family: "Abril Fatface", serif;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #773426;
+}
+body .container .header h1 > span {
+  color: #175602;
+}
+body .container .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container div nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body .container div nav .menu-btn {
+  min-width: 50%;
+}
+body .container div nav a {
+  padding: 3%;
+}
+body .container .cta {
+  padding: 2%;
+}
+body .container .cta img {
+  width: 96%;
+  padding: 2%;
+}
+body .container .footer {
+  text-align: center;
+}
