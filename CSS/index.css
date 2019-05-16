@@ -195,23 +195,102 @@ h6 {
 }
 .container {
   max-width: 960px;
+  height: 100%;
   margin: 0 auto;
 }
 .brand {
-  color: #773426;
+  color: #e53118;
+  letter-spacing: .8rem;
 }
 .brand span {
   color: #175602;
 }
+/* HEADER */
 header {
   height: 80vh;
+  background: url('/assets/home-img.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 header .page-title {
-  font-size: 4rem;
+  font-size: 8rem;
   font-family: 'Abril Fatface', cursive;
+  color: #e53118;
   margin-bottom: 2rem;
+}
+header .tagline {
+  font-size: 2rem;
+  color: #175602;
+}
+header .tagline strong {
+  font-weight: bold;
+  color: #e53118;
+}
+/* NAVIGATION */
+.navbar {
+  height: 60px;
+  background: white;
+}
+.navbar .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar .nav-wrapper div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar .nav-wrapper div .brand {
+  text-decoration: none;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2rem;
+}
+.navbar .nav-wrapper div .nav-link {
+  color: #e46f3e;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.navbar .nav-wrapper div .nav-link:not(:first-child) {
+  margin-left: 2rem;
+}
+.navbar .nav-wrapper div .nav-link:hover {
+  color: #e53118;
+}
+.navbar .nav-wrapper div .active {
+  color: #e53118;
+}
+/* INTRODUCTION */
+.intro {
+  height: 600px;
+  padding: 2rem;
+  background: url('/assets/funky-lines.png');
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.intro .intro-text {
+  font-size: 2rem;
+  z-index: 2;
+  font-weight: bold;
+  color: #113948;
+  text-shadow: 0 2px 4px rgba(51, 51, 51, 0.8);
+}
+.intro .background {
+  position: absolute;
+  z-index: 1;
+  color: #e53118;
+}
+.intro .background .fas {
+  font-size: 20rem;
+  margin-top: -2rem;
+  text-shadow: 0 2px 4px rgba(51, 51, 51, 0.8);
 }

@@ -1,10 +1,94 @@
+/* HEADER */
 header {
-    height: 80vh;
-    .flex-align(@dir: column);
+  height: 80vh;
+  background: url('/assets/home-img.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  .flex-align(@dir: column);
 
-    .page-title {
-        font-size: 4rem;
-        font-family: @font-title;
-        margin-bottom: 2rem;
+  .page-title {
+    font-size: 8rem;
+    font-family: @font-title;
+    color: @vermilion;
+    margin-bottom: 2rem;
+  }
+
+  .tagline {
+    font-size: 2rem;
+    color: @lincoln-green;
+
+    strong {
+      font-weight: bold;
+      color: @vermilion;
     }
+  }
+}
+
+/* NAVIGATION */
+.navbar {
+  height: 60px;
+  background: white;
+
+  .nav-wrapper {
+    .flex-align(space-between);
+
+    div {
+      .flex-align();
+
+      .brand {
+        text-decoration: none;
+        font-family: @font-title;
+        font-size: 2rem;
+      }
+
+      .nav-link {
+        color: @medium-vermilion;
+        text-decoration: none;
+        font-size: 1.4rem;
+
+        &:not(:first-child) {
+          margin-left: 2rem;
+        }
+
+        &:hover {
+          color: @vermilion;
+        }
+      }
+
+      .active {
+        color: @vermilion;
+      }
+    }
+  }
+}
+
+/* INTRODUCTION */
+.intro {
+  height: 600px;
+  padding: 2rem;
+  background: url('/assets/funky-lines.png');
+  background-attachment: fixed;
+
+  .flex-align();
+
+  .intro-text {
+    font-size: 2rem;
+    z-index: 2;
+    font-weight: bold;
+    color: @japanese-indigo;
+    text-shadow: 0 2px 4px rgba(51, 51, 51, 0.8);
+  }
+
+  .background {
+    position: absolute;
+    z-index: 1;
+    color: @vermilion;
+
+    .fas {
+      font-size: 20rem;
+      margin-top: -2rem;
+      text-shadow: 0 2px 4px rgba(51, 51, 51, 0.8);
+    }
+  }
+
 }
