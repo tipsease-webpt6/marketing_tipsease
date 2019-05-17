@@ -203,11 +203,11 @@ h6 {
   letter-spacing: .8rem;
 }
 .brand span {
-  color: #175602;
+  color: #90ee90;
 }
 /* HEADER */
 header {
-  height: 80vh;
+  height: 90vh;
   background: url('/assets/home-img.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -224,7 +224,7 @@ header .page-title {
 }
 header .tagline {
   font-size: 2rem;
-  color: #175602;
+  color: #90ee90;
 }
 header .tagline strong {
   font-weight: bold;
@@ -233,7 +233,7 @@ header .tagline strong {
 /* NAVIGATION */
 .navbar {
   height: 60px;
-  background: white;
+  background: #113948;
 }
 .navbar .nav-wrapper {
   display: flex;
@@ -287,10 +287,48 @@ header .tagline strong {
 .intro .background {
   position: absolute;
   z-index: 1;
-  color: #e53118;
+  color: #90ee90;
 }
 .intro .background .fas {
-  font-size: 20rem;
-  margin-top: -2rem;
+  font-size: 25rem;
+  margin-top: -3rem;
   text-shadow: 0 2px 4px rgba(51, 51, 51, 0.8);
+}
+/* FEATURE SECTION */
+.features {
+  background: #113948;
+  padding: 4rem;
+}
+.features .cards {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.features .cards .card {
+  background: #e46f3e;
+  height: 100%;
+  width: 28%;
+  padding: 2rem;
+  border: solid 1px #113948;
+}
+.features .cards .card .card-title {
+  font-size: 2rem;
+}
+/* FOOTER */
+footer {
+  color: #eae3e1;
+  background: #113948;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+footer .brand {
+  letter-spacing: 0.4rem;
+}
+footer .brand span {
+  color: lightgreen;
 }
