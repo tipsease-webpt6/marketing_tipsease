@@ -1,28 +1,38 @@
 <!DOCTYPE html
 <html>
 	<head>
-		<title>tipsease - services</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>tipsease - services</title>
         <link rel="stylesheet" href="./CSS/services.css">
         <!-- Greensock Animations CDN: -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
         <!-- Fonts CDN: -->
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+        <script src="./components/services.js" async></script>
 
 	</head>
 	<body>
 		<!-- Body in here -->	
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#" alt="Home">Home</a>
+                <a href="#" alt="See Our Service Workers">See Our Service Workers</a>
+                <a href="#" alt="Log In/Register">Login/Register</a>
+            </div>
+        </div>
         <div class="container">
             <div class="header">
                 <h1>TIPS<span>EA$E</span></h1>
             </div>
             <div class="nav">
-                <button class="menu-btn">Menu</button>
-                <br >
+                <span style="font-size:3rem;cursor:pointer;padding:2%;" onclick="openNav()">&#9776;</span>                
+                <!-- <br >
                 <nav>
                     <a href="#" alt="Home">Home</a>
                     <a href="#" alt="See Our Service Workers">See Our Service Workers</a>
                     <a href="#" alt="Log In/Register">Login/Register</a>
-                </nav>
+                </nav> -->
             </div>
 
             <div class="cta">
