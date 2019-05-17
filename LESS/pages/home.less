@@ -26,11 +26,11 @@ header {
 
 /* NAVIGATION */
 .navbar {
-  height: 60px;
+  height: 5rem;
   background: @japanese-indigo;
 
   .nav-wrapper {
-    .flex-align(space-between);
+    .flex-align(space-around);
 
     div {
       .flex-align();
@@ -47,7 +47,7 @@ header {
         font-size: 1.4rem;
 
         &:not(:first-child) {
-          margin-left: 2rem;
+          margin-left: 4rem;
         }
 
         &:hover {
@@ -95,21 +95,29 @@ header {
 /* FEATURE SECTION */
 .features {
   background: @japanese-indigo;
-  padding: 4rem;
+  padding: 8%;
 
   .cards {
     color: white;
-    .flex-align(space-between);
+    .flex-align(center);
 
     .card {
       background: @medium-vermilion;
       height: 100%;
-      width: 28%;
+      width: 25%;
+      max-width: 500px;
       padding: 2rem;
-      border: solid 1px @japanese-indigo;
+      border-radius: 10px;
+
+      &:not(:last-child) {
+        margin-right: 4%;
+      }
 
       .card-title {
         font-size: 2rem;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: solid 1px @japanese-indigo;
       }
     }
   }
