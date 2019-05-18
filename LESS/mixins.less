@@ -4,3 +4,17 @@
     align-items: @align;
     flex-direction: @dir;
 }
+
+.resp-text(@lg-font; @md-font; @sm-font) {
+    @media @break-lg {
+        font-size: @lg-font;
+    }
+
+    @media @break-md {
+        font-size: @md-font;
+    }
+
+    @media @break-sm {
+        font-size: @sm-font;
+    }
+}

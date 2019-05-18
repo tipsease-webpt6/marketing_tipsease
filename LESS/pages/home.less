@@ -7,14 +7,15 @@ header {
   .flex-align(@dir: column);
 
   .page-title {
-    font-size: 8rem;
     font-family: @font-title;
     color: @vermilion;
     margin-bottom: 2rem;
   }
 
   .tagline {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    .resp-text(1.5rem, 1.3rem, 1.2rem);
+
     color: @lincoln-green;
 
     strong {
@@ -26,11 +27,20 @@ header {
 
 /* NAVIGATION */
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
   height: 5rem;
   background: @japanese-indigo;
 
   .nav-wrapper {
+    height: 100%;
+    width: 100%;
     .flex-align(space-around);
+
+    @media @break-sm {
+      .flex-align(@dir: column);
+    }
 
     div {
       .flex-align();
@@ -39,15 +49,27 @@ header {
         text-decoration: none;
         font-family: @font-title;
         font-size: 2rem;
+        .resp-text(1.6rem, 1.4rem, 1.2rem);
+
+        @media @break-sm {
+          margin-bottom: 0.5rem;
+        }
       }
 
       .nav-link {
         color: @medium-vermilion;
         text-decoration: none;
         font-size: 1.4rem;
+        .resp-text(1.4rem, 1.4rem, 1.2rem);
 
         &:not(:first-child) {
           margin-left: 4rem;
+        }
+
+        @media @break-sm {
+          &:not(:first-child) {
+            margin-left: 1rem;
+          }
         }
 
         &:hover {
@@ -176,13 +198,12 @@ header {
   background-attachment: fixed;
   .flex-align(@dir: column);
   padding: 4%;
-  z-index: -2;
 
   .cta-text {
     color: @platinum;
     margin-bottom: 2%;
-    z-index: 2;
     text-shadow: 0 0 4px @medium-vermilion;
+    text-align: center;
   }
 
   .cta-btn {
@@ -193,15 +214,7 @@ header {
     box-shadow: 0 4px 8px @shadow;
     border-radius: 3px;
     font-size: 1.8rem;
-    z-index: 2;
   }
-
-  // .background {
-  //   position: absolute;
-  //   z-index: -1;
-  //   color: @japanese-indigo;
-  //   font-size: 40rem;
-  // }
 }
 
 /* FOOTER */
