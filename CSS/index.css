@@ -314,9 +314,24 @@ h6 {
   }
 }
 .container {
-  max-width: 80%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 1600px) {
+  .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .container {
@@ -492,9 +507,42 @@ header .tagline strong {
   color: #e53118;
 }
 /* INTRODUCTION */
+.carousel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.carousel .slide {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.carousel .active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.carousel .next,
+.carousel .prev {
+  position: absolute;
+  top: 46.5%;
+  font-size: 3rem;
+}
+.carousel .next {
+  right: 0;
+}
+.carousel .prev {
+  left: 0;
+}
+.carousel a {
+  color: #113948;
+}
 .intro {
+  position: relative;
   height: 600px;
-  padding: 2rem;
+  padding: 2% 0;
   background: url('/assets/funky-lines.png');
   background-attachment: fixed;
   display: flex;
