@@ -5,7 +5,7 @@
     flex-direction: @dir;
 }
 
-.resp-text(@lg-font; @md-font; @sm-font) {
+.resp-text(@lg-font: 1.6rem; @md-font: 1.4rem; @sm-font: 1.2rem; @xs-font: 1.1rem) {
     @media @break-lg {
         font-size: @lg-font;
     }
@@ -16,5 +16,9 @@
 
     @media @break-sm {
         font-size: @sm-font;
+    }
+
+    @media @break-xs {
+        font-size: @xs-font;
     }
 }

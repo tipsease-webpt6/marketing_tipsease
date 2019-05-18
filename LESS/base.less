@@ -10,7 +10,7 @@ p {
 
 h1 {
     font-size: 6rem;
-    .resp-text(5rem; 4.5rem; 4rem; );
+    .resp-text(5rem; 4.5rem; 4rem; 3rem);
 }
 
 h2 {
@@ -43,6 +43,10 @@ h6 {
     max-width: 80%;
     height: 100%;
     margin: 0 auto;
+
+    @media @break-sm {
+        width: 100%;
+    }
 }
 
 // Branding Styles
