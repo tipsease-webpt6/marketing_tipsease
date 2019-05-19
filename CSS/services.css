@@ -181,6 +181,21 @@ table {
   font-size: 14px;
   line-height: 1.35;
 }
+.card .article {
+  padding-top: 5%;
+  text-align: center;
+}
+.card .article .recommendation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.card .article .recommendation .amount {
+  width: 49%;
+  text-align: center;
+  padding: 5%;
+}
 body .container {
   width: 100%;
   margin: 0 auto;
