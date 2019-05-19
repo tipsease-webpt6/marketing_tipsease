@@ -340,10 +340,10 @@ h6 {
 }
 .brand {
   color: #e53118;
-  letter-spacing: .8rem;
+  letter-spacing: 0.8rem;
 }
 .brand span {
-  color: #90ee90;
+  color: lightgreen;
 }
 /* HEADER */
 header {
@@ -363,7 +363,7 @@ header .page-title {
 }
 header .tagline {
   font-size: 1.5rem;
-  color: #90ee90;
+  color: lightgreen;
 }
 @media only screen and (max-width: 1200px) {
   header .tagline {
@@ -389,156 +389,7 @@ header .tagline strong {
   font-weight: bold;
   color: #e53118;
 }
-/* NAVIGATION */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 99;
-  height: 5rem;
-  background: #113948;
-}
-.navbar .nav-wrapper {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-}
-@media only screen and (max-width: 768px) {
-  .navbar .nav-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-.navbar .nav-wrapper div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.navbar .nav-wrapper div .brand {
-  text-decoration: none;
-  font-family: 'Abril Fatface', cursive;
-  font-size: 2rem;
-}
-@media only screen and (max-width: 1200px) {
-  .navbar .nav-wrapper div .brand {
-    font-size: 1.6rem;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .navbar .nav-wrapper div .brand {
-    font-size: 1.4rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .navbar .nav-wrapper div .brand {
-    font-size: 1.2rem;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .navbar .nav-wrapper div .brand {
-    font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .navbar .nav-wrapper div .brand {
-    margin-bottom: 0.5rem;
-  }
-}
-.navbar .nav-wrapper div .nav-link {
-  position: relative;
-  color: #e46f3e;
-  text-decoration: none;
-  font-size: 1.4rem;
-}
-@media only screen and (max-width: 1200px) {
-  .navbar .nav-wrapper div .nav-link {
-    font-size: 1.4rem;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .navbar .nav-wrapper div .nav-link {
-    font-size: 1.4rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .navbar .nav-wrapper div .nav-link {
-    font-size: 1.2rem;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .navbar .nav-wrapper div .nav-link {
-    font-size: 1rem;
-  }
-}
-.navbar .nav-wrapper div .nav-link:not(:first-child) {
-  margin-left: 4rem;
-}
-@media only screen and (max-width: 768px) {
-  .navbar .nav-wrapper div .nav-link:not(:first-child) {
-    margin-left: 1rem;
-  }
-}
-.navbar .nav-wrapper div .nav-link:hover {
-  color: #e53118;
-}
-.navbar .nav-wrapper div .nav-link:before {
-  content: "";
-  position: absolute;
-  background-color: #e53118;
-  width: 40px;
-  height: 4px;
-  bottom: -0.5rem;
-  left: 0;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
-  border-radius: 4px;
-}
-.navbar .nav-wrapper div .nav-link:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-.navbar .nav-wrapper div .active {
-  color: #e53118;
-}
 /* INTRODUCTION */
-.carousel {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-.carousel .slide {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: none;
-}
-.carousel .active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.carousel .next,
-.carousel .prev {
-  position: absolute;
-  top: 46.5%;
-  font-size: 3rem;
-}
-.carousel .next {
-  right: 0;
-}
-.carousel .prev {
-  left: 0;
-}
-.carousel a {
-  color: #113948;
-}
 .intro {
   position: relative;
   height: 600px;
@@ -581,7 +432,7 @@ header .tagline strong {
 .intro .background {
   position: absolute;
   z-index: 1;
-  color: #90ee90;
+  color: lightgreen;
 }
 .intro .background .fas {
   font-size: 25rem;
@@ -716,7 +567,7 @@ header .tagline strong {
 }
 .features .cards .card .card-inner .card-front .fas,
 .features .cards .card .card-inner .card-front .far {
-  color: #90ee90;
+  color: lightgreen;
   font-size: 10rem;
 }
 .features .cards .card .card-inner .card-back {
@@ -827,4 +678,153 @@ footer .brand {
 }
 footer .brand span {
   color: lightgreen;
+}
+/* NAVIGATION */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  height: 5rem;
+  background: #113948;
+}
+.navbar .nav-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+@media only screen and (max-width: 768px) {
+  .navbar .nav-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.navbar .nav-wrapper div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar .nav-wrapper div .brand {
+  text-decoration: none;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar .nav-wrapper div .brand {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar .nav-wrapper div .brand {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar .nav-wrapper div .brand {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbar .nav-wrapper div .brand {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar .nav-wrapper div .brand {
+    margin-bottom: 0.5rem;
+  }
+}
+.navbar .nav-wrapper div .nav-link {
+  position: relative;
+  color: #e46f3e;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar .nav-wrapper div .nav-link {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar .nav-wrapper div .nav-link {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar .nav-wrapper div .nav-link {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbar .nav-wrapper div .nav-link {
+    font-size: 1rem;
+  }
+}
+.navbar .nav-wrapper div .nav-link:not(:first-child) {
+  margin-left: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .navbar .nav-wrapper div .nav-link:not(:first-child) {
+    margin-left: 1rem;
+  }
+}
+.navbar .nav-wrapper div .nav-link:hover {
+  color: #e53118;
+}
+.navbar .nav-wrapper div .nav-link:before {
+  content: "";
+  position: absolute;
+  background-color: #e53118;
+  width: 40px;
+  height: 4px;
+  bottom: -0.5rem;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+  border-radius: 4px;
+}
+.navbar .nav-wrapper div .nav-link:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.navbar .nav-wrapper div .active {
+  color: #e53118;
+}
+.carousel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.carousel .slide {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.carousel .active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.carousel .next,
+.carousel .prev {
+  position: absolute;
+  top: 46.5%;
+  font-size: 3rem;
+}
+.carousel .next {
+  right: 0;
+}
+.carousel .prev {
+  left: 0;
+}
+.carousel a {
+  color: #113948;
 }
