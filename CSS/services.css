@@ -298,6 +298,10 @@ body .article {
   overflow: hidden;
   display: none;
 }
+body .article .recommendation .numbers {
+  font-family: 'Didot', sans-serif;
+  font-size: 3rem;
+}
 body .article-open {
   display: inline-block;
 }
