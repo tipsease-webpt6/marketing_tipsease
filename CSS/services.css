@@ -245,7 +245,7 @@ body .container .footer {
 body {
   font-family: 'Lato', sans-serif;
 }
-.overlay {
+body .overlay {
   height: 100%;
   width: 0;
   position: fixed;
@@ -257,7 +257,7 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
 }
-.overlay-content {
+body .overlay-content {
   position: relative;
   top: 25%;
   width: 100%;
@@ -265,7 +265,7 @@ body {
   margin-top: 30px;
   padding: 5%;
 }
-.overlay a {
+body .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -273,23 +273,31 @@ body {
   display: block;
   transition: 0.3s;
 }
-.overlay a:hover,
-.overlay a:focus {
+body .overlay a:hover,
+body .overlay a:focus {
   color: #f1f1f1;
 }
-.overlay .closebtn {
+body .overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
 }
 @media screen and (max-height: 450px) {
-  .overlay a {
+  body .overlay a {
     font-size: 20px;
   }
-  .overlay .closebtn {
+  body .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
+}
+body .article {
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+body .article-open {
+  display: inline-block;
 }

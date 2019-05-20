@@ -55,9 +55,9 @@
                         <br >
                         <h3>Stocking Shelves Sounds Easy...</h3>
                         <p>...but deciding what to put on the shelves is another matter entirely.  Food retailers operate on slim margins, even slimmer now with the all-out price-wars going on amongst all the major players.  Supermarket employees are worked very hard, and often treated very poorly, by management and customers alike.  Make someone's day, and make up for those lost thank-you's by giving a tip!</p>
-                        <button class="tip" id="groceryWorker">Tip a Grocery Worker</button>
+                        <button class="tip" id="groceryWorker" onclick="groceryButton();">Tip a Grocery Worker</button>
                     </div>
-                    <div class="article">
+                    <div class="article" id="groceryArticle">
                         <h4>We Recommend Tipping:</h4>
                         <div class="recommendation">
                             <div class="amount"><p>$3 <br >per special request</p></div>
@@ -75,7 +75,14 @@
                         <br >
                         <h3>Do you trust your Valet..?</h3>
                         <p>...handing over those keys when you're in a hurry can be the ultimate convenience, but remember that the valet is paid like they are doing nothing all day.  Don't expect a hurry up without compensating your person fairly. Make someone's day, and reward that hustle by giving a tip!</p>
-                        <button class="tip" id="valetWorker">Tip Car Valet</button>
+                        <button class="tip" id="valetWorker"  onclick="valetButton();">Tip Car Valet</button>
+                    </div>
+                    <div class="article" id="valetArticle">
+                        <h4>We Recommend Tipping:</h4>
+                        <div class="recommendation">
+                            <div class="amount"><p>$1-3 <br >depending on weather and distance</p></div>
+                            <div class="amount"><p>$5 <br >for cars valued $50k+</p></div>
+                        </div>
                     </div>
                 </div>
 
@@ -88,7 +95,14 @@
                         <br >
                         <h3>The last mile is always the hardest...</h3>
                         <p>...meaning, your box never magically arrives on your doorstep.  It's a team effort of hundreds of people, but most importantly, the person who places the box at your doorstep.  Drivers have to keep tight schedules, and sit in traffic for a long time every day.   Ensure your parcel's safe delivery and feel good by giving a tip!</p>
-                        <button class="tip" id="deliveryWorker">Tip Delivery Driver</button>
+                        <button class="tip" id="deliveryWorker" onclick="deliveryButton();">Tip Delivery Driver</button>
+                    </div>
+                    <div class="article" id="deliveryArticle">
+                        <h4>We Recommend Tipping:</h4>
+                        <div class="recommendation">
+                            <div class="amount"><p>$5-10 <br >for big items, per mover</p></div>
+                            <div class="amount"><p>$5-25 <br >at the holiday, for your regular driver, depending on frequency of visits</p></div>
+                        </div>
                     </div>
                 </div>
             
@@ -101,8 +115,15 @@
                         <br >
                         <h3>Below Minimum Wage...</h3>
                         <p>...that's the hourly pay of many waiters and waitresses.  Even today, in 2019, restaurants pay waitstaff $3-4 less than the state's minimum hourly wage.  Their work isn't worthless, and they deserve a living wage as well.  Make sure your waiter can afford food, and reward anything extra by tipping superfluously!</p>
-                        <button class="tip" id="waiterWorker">Tip Waitstaff</button>
+                        <button class="tip" id="waiterWorker" onclick="waiterButton();">Tip Waitstaff</button>
                     </div>
+                    <div class="article" id="waiterArticle">
+                            <h4>We Recommend Tipping:</h4>
+                            <div class="recommendation">
+                                <div class="amount"><p>20% <br >for average/good service</p></div>
+                                <div class="amount"><p>$1-2 <br >per drink at the bar</p></div>
+                            </div>
+                        </div>
                 </div>
             </div>
 
