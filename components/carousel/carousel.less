@@ -1,0 +1,35 @@
+.carousel {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  
+    .slide {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: none;
+    }
+  
+    .active {
+      .flex-align();
+    }
+  
+    .next,
+    .prev {
+      position: absolute;
+      top: 46.5%;
+      font-size: 3rem;
+    }
+  
+    .next {
+      right: 0;
+    }
+  
+    .prev {
+      left: 0;
+    }
+  
+    a {
+      color: @japanese-indigo;
+    }
+  }

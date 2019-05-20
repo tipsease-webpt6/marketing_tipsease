@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-	<title>TipsEa$e - home</title>
+	<title>TipsEa$e - Home</title>
 
 	<!-- Fonts CDN: -->
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans" rel="stylesheet">
@@ -43,49 +43,91 @@
 	</nav>
 
 	<section class="intro">
+		<div class="container">
+			<div class="carousel">
 
-		<p class="intro-text">We've found the ultimate way to reward stellar service</p>
-		<div class="background"><i class="fas fa-hand-holding-usd"></i></div>
+				<!-- Carousel Slides -->
+				<div class="slide active">
+					<p class="intro-text">We've found the ultimate way to reward stellar service</p>
+					<div class="background"><i class="fas fa-hand-holding-usd"></i></div>
+				</div>
+				<div class="slide">
+					<p class="intro-text">Skip the tip jar, tip directly to your service worker!</p>
+					<div class="background"><i class="fas fa-coins"></i></div>
+				</div>
+
+				<div class="slide">
+					<p class="intro-text">We've found the ultimate way to reward stellar service</p>
+					<div class="background"><i class="fas fa-hand-holding-usd"></i></div>
+				</div>
+
+				<div class="slide">
+					<p class="intro-text">We've found the ultimate way to reward stellar service</p>
+					<div class="background"><i class="fas fa-hand-holding-usd"></i></div>
+				</div>
+
+
+				<!-- Carousel Controls -->
+				<div class="next">
+					<a href="#">
+						<i class="fas fa-chevron-right"></i>
+					</a>
+				</div>
+				<div class="prev">
+					<a href="#">
+						<i class="fas fa-chevron-left"></i>
+					</a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section class="features">
-		<div class="cards">
-			<div class="card">
-				<div class="card-inner">
-					<div class="card-front">
-						<div class="card-title">Flexible Tipping Options</div>
-						<i class="fas fa-credit-card"></i>
-					</div>
-					<div class="card-back">
-						<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt explicabo obcaecati
-							facere, officiis, laborum quidem maiores saepe dolore molestias doloribus sit. Vero fuga laborum sed dicta
-							vitae soluta impedit ipsam?</p>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-inner">
-					<div class="card-front">
-						<div class="card-title">Automatic Tip Calculator</div>
-						<i class="fas fa-calculator"></i>
-					</div>
-					<div class="card-back">
-						<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt explicabo obcaecati
-							facere, officiis, laborum quidem maiores saepe dolore molestias doloribus sit. Vero fuga laborum sed dicta
-							vitae soluta impedit ipsam?</p>
+		<div class="container">
+			<div class="cards">
+				<div class="card">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="card-title">Flexible Tipping Options</div>
+							<i class="fas fa-credit-card"></i>
+						</div>
+						<div class="card-back">
+							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt explicabo
+								obcaecati
+								facere, officiis, laborum quidem maiores saepe dolore molestias doloribus sit. Vero fuga laborum sed
+								dicta
+								vitae soluta impedit ipsam?</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="card">
-				<div class="card-inner">
-					<div class="card-front">
-						<div class="card-title">Serving Many Industries</div>
-						<i class="far fa-handshake"></i>
+				<div class="card">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="card-title">Automatic Tip Calculator</div>
+							<i class="fas fa-calculator"></i>
+						</div>
+						<div class="card-back">
+							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt explicabo
+								obcaecati
+								facere, officiis, laborum quidem maiores saepe dolore molestias doloribus sit. Vero fuga laborum sed
+								dicta
+								vitae soluta impedit ipsam?</p>
+						</div>
 					</div>
-					<div class="card-back">
-						<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt explicabo obcaecati
-							facere, officiis, laborum quidem maiores saepe dolore molestias doloribus sit. Vero fuga laborum sed dicta
-							vitae soluta impedit ipsam?</p>
+				</div>
+				<div class="card">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="card-title">Serving Many Industries</div>
+							<i class="far fa-handshake"></i>
+						</div>
+						<div class="card-back">
+							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt explicabo
+								obcaecati
+								facere, officiis, laborum quidem maiores saepe dolore molestias doloribus sit. Vero fuga laborum sed
+								dicta
+								vitae soluta impedit ipsam?</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -95,7 +137,7 @@
 	<section class="cta">
 		<h4 class="cta-text">Ready to revolutionize the service industry?</h4>
 		<div class="cta-btn">
-			Sign-up Today!
+			<a href="#">Sign-up Today!</a>
 		</div>
 	</section>
 
@@ -106,6 +148,7 @@
 	<!-- Scripts go here -->
 	<!-- Greensock Animations CDN: -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	<script src="/components/carousel/carousel.js"></script>
 </body>
 
 </html>

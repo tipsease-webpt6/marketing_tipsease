@@ -10,7 +10,7 @@ p {
 
 h1 {
     font-size: 6rem;
-    .resp-text(5rem; 4.5rem; 4rem; );
+    .resp-text(5rem; 4.5rem; 4rem; 3rem);
 }
 
 h2 {
@@ -40,9 +40,25 @@ h6 {
 
 // Universal Layout Styles
 .container {
-    max-width: 80%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
+
+    @media @break-xl {
+        width: 80%;
+    }
+
+    @media @break-lg {
+        width: 90%;
+    }
+
+    @media @break-md {
+        width: 100%;
+    }
+
+    @media @break-sm {
+        width: 100%;
+    }
 }
 
 // Branding Styles

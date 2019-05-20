@@ -14,7 +14,7 @@ header {
 
   .tagline {
     font-size: 1.5rem;
-    .resp-text(1.5rem, 1.3rem, 1.2rem);
+    .resp-text(1.5rem, 1.3rem, 1.2rem, 1rem);
 
     color: @lincoln-green;
 
@@ -25,72 +25,13 @@ header {
   }
 }
 
-/* NAVIGATION */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 99;
-  height: 5rem;
-  background: @japanese-indigo;
-
-  .nav-wrapper {
-    height: 100%;
-    width: 100%;
-    .flex-align(space-around);
-
-    @media @break-sm {
-      .flex-align(@dir: column);
-    }
-
-    div {
-      .flex-align();
-
-      .brand {
-        text-decoration: none;
-        font-family: @font-title;
-        font-size: 2rem;
-        .resp-text(1.6rem, 1.4rem, 1.2rem);
-
-        @media @break-sm {
-          margin-bottom: 0.5rem;
-        }
-      }
-
-      .nav-link {
-        color: @medium-vermilion;
-        text-decoration: none;
-        font-size: 1.4rem;
-        .resp-text(1.4rem, 1.4rem, 1.2rem);
-
-        &:not(:first-child) {
-          margin-left: 4rem;
-        }
-
-        @media @break-sm {
-          &:not(:first-child) {
-            margin-left: 1rem;
-          }
-        }
-
-        &:hover {
-          color: @vermilion;
-        }
-      }
-
-      .active {
-        color: @vermilion;
-      }
-    }
-  }
-}
-
 /* INTRODUCTION */
 .intro {
+  position: relative;
   height: 600px;
-  padding: 2rem;
+  padding: 2% 0;
   background: url('/assets/funky-lines.png');
   background-attachment: fixed;
-
   .flex-align();
 
   .intro-text {
@@ -98,7 +39,9 @@ header {
     z-index: 2;
     font-weight: bold;
     color: @japanese-indigo;
+    text-align: center;
     text-shadow: 0 2px 4px rgba(51, 51, 51, 0.8);
+    .resp-text(1.8rem; 1.6rem; 1.4rem);
   }
 
   .background {
@@ -108,31 +51,58 @@ header {
 
     .fas {
       font-size: 25rem;
+      .resp-text(25rem, 24rem, 22rem, 20rem);
       margin-top: -3rem;
       text-shadow: 0 2px 4px @shadow;
+
+      @media @break-sm {
+        margin-top: -2.5rem;
+      }
     }
   }
 }
 
 /* FEATURE SECTION */
 .features {
+  overflow: hidden;
   background: @medium-vermilion;
-  padding: 8%;
+  padding: 8% 0;
 
   .cards {
     color: white;
-    .flex-align(space-around);
+    .flex-align();
     flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+
+    @media @break-lg {
+      flex-direction: column;
+    }
 
     .card {
       background: transparent;
+      position: relative;
       height: 400px;
-      width: 400px;
+      width: 100%;
+      max-width: 400px;
+      min-width: 200px;
+      flex-basis: 33.33%;
       max-width: 500px;
       perspective: 1000px;
+      margin: 10px;
 
-      &:not(:last-child) {
-        margin-right: 4%;
+      // Responsive Media Queries
+      @media @break-sm {
+        margin: 10px 0;
+        flex-basis: 100%;
+        width: 100%;
+        height: 200px;
+      }
+
+      @media @break-md {
+        height: 300px;
+        width: 100%;
+        flex-basis: 50%;
       }
 
       &:hover .card-inner {
@@ -165,6 +135,7 @@ header {
 
           .card-title {
             font-size: 1.6rem;
+            .resp-text(1.4rem, 1.2rem, 1.1rem);
             margin-bottom: 1rem;
           }
 
@@ -192,12 +163,23 @@ header {
 /* Call to Action */
 .cta {
   position: relative;
-  height: 800px;
   background: url('/assets/cta-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   .flex-align(@dir: column);
-  padding: 4%;
+  padding: 10% 0;
+
+  @media @break-sm {
+    padding: 30% 0;
+  }
+
+  @media @break-lg {
+    padding: 25% 0;
+  }
+
+  @media @break-xl {
+    padding: 20% 0;
+  }
 
   .cta-text {
     color: @platinum;
@@ -207,13 +189,36 @@ header {
   }
 
   .cta-btn {
+    position: relative;
     cursor: pointer;
-    color: @platinum;
-    padding: 1% 2%;
     background: @medium-vermilion;
-    box-shadow: 0 4px 8px @shadow;
+    box-shadow: 0 4px 8px #000;
     border-radius: 3px;
-    font-size: 1.8rem;
+    transition: 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 6px 12px #000;
+      transform: translateY(-3px);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px #000;
+    }
+
+    a {
+      font-size: 1.8rem;
+      overflow: hidden;
+      display: block;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      color: @platinum;
+      .resp-text();
+
+      @media @break-xs {
+        padding: 0.5rem 1rem;
+      }
+    }
   }
 }
 
