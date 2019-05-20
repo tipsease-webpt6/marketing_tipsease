@@ -1,4 +1,4 @@
-// @import './reset';
+@import 'reset';
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,7 +47,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-@import './cards';
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import './pages/pages';
+@import 'cards';
 
 body {
     .container {
@@ -55,11 +59,12 @@ body {
         margin:0 auto;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-
+        // overflow:hidden;
         .header{
+            padding-top: 5%;
             h1 {
                 font-family: "Abril Fatface", serif;
                 font-size: 4rem;
@@ -177,3 +182,83 @@ body {
     display:inline-block;
   }
 }
+
+
+/* NAVIGATION */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    height: 5rem;
+    background: @japanese-indigo;
+    .nav-wrapper {
+      height: 100%;
+      width: 100%;
+      .flex-align(space-around);
+      overflow:hidden;
+
+      @media @break-sm {
+        .flex-align(@dir: column);
+      }
+  
+      div {
+        .flex-align();
+  
+        .brand {
+          text-decoration: none;
+          font-family: @font-title;
+          font-size: 2rem;
+          .resp-text(1.6rem, 1.4rem, 1.2rem, 1rem);
+  
+          @media @break-sm {
+            margin-bottom: 0.5rem;
+          }
+        }
+  
+        .nav-link {
+          position: relative;
+          color: @medium-vermilion;
+          text-decoration: none;
+          font-size: 1.4rem;
+          .resp-text(1.4rem, 1.4rem, 1.2rem, 1rem);
+  
+          &:not(:first-child) {
+            margin-left: 4rem;
+          }
+  
+          @media @break-sm {
+            &:not(:first-child) {
+              margin-left: 1rem;
+            }
+          }
+  
+          &:hover {
+            color: @vermilion;
+          }
+  
+          &:before {
+            content: "";
+            position: absolute;
+            background-color: @vermilion;
+            width: 40px;
+            height: 4px;
+            bottom: -0.5rem;
+            left: 0;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+            border-radius: 4px;
+          }
+  
+          &:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
+          }
+        }
+  
+        .active {
+          color: @vermilion;
+        }
+      }
+    }
+  }
