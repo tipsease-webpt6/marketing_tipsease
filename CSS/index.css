@@ -171,6 +171,7 @@ textarea {
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
+  overflow: hidden;
 }
 p {
   font-size: 1.2rem;
@@ -340,10 +341,10 @@ h6 {
 }
 .brand {
   color: #e53118;
-  letter-spacing: 0.8rem;
+  letter-spacing: .8rem;
 }
 .brand span {
-  color: lightgreen;
+  color: #90ee90;
 }
 /* HEADER */
 header {
@@ -363,7 +364,7 @@ header .page-title {
 }
 header .tagline {
   font-size: 1.5rem;
-  color: lightgreen;
+  color: #90ee90;
 }
 @media only screen and (max-width: 1200px) {
   header .tagline {
@@ -432,7 +433,7 @@ header .tagline strong {
 .intro .background {
   position: absolute;
   z-index: 1;
-  color: lightgreen;
+  color: #90ee90;
 }
 .intro .background .fas {
   font-size: 25rem;
@@ -567,7 +568,7 @@ header .tagline strong {
 }
 .features .cards .card .card-inner .card-front .fas,
 .features .cards .card .card-inner .card-front .far {
-  color: lightgreen;
+  color: #90ee90;
   font-size: 10rem;
 }
 .features .cards .card .card-inner .card-back {
