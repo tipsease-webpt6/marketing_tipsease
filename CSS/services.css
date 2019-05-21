@@ -883,6 +883,9 @@ footer .brand span {
   text-align: center;
   padding: 5%;
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 body .container {
   width: 100%;
   margin: 0 auto;
