@@ -866,6 +866,12 @@ footer .brand span {
   padding-top: 5%;
   text-align: center;
 }
+.card .article .tdImg {
+  width: 100%;
+}
+.card .article .tdImg img {
+  width: 100%;
+}
 .card .article .recommendation {
   display: flex;
   justify-content: space-around;
