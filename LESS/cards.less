@@ -8,9 +8,7 @@
     width: 100%;
 }
   
-.border-bottom-grey {
-    border-bottom: 1px solid @lambda-times-color-lightgrey;
-}
+
 
 .flex(@jc: none, @ai: none, @dir: row) {
     display: flex;
@@ -28,36 +26,93 @@
       width: 1200px;
     }
     .card {
-      .border-bottom-grey();
-      .flex(space-between, none, column);
-      background-color: @lambda-times-color-white;
+      .flex(space-between, center, column);
       width: 100%;
       margin-bottom: 16px;
       padding: 24px;
 
       .workTitle {
         text-align: center;
-        font-size: 25px;
-        font-family: Didot, serif;
+        font-size: 3rem;
+        font-family: Didot, sans-serif;
       }
       .worker {
         .flex(space-between,space-between, column);
         margin-top: 15px;
+        
+        .tip{
+          height:2.5rem;
+          width:60%;
+          color:white;
+          background-color: #113948;
+          margin:0 auto;
+        }
+
         .img-container {
           padding-bottom: 10px;
-          border-bottom: 1px solid @lambda-times-color-lightgrey;
         //   height: 40px;
           img {
             width: 100%;
           }
         }
         p {
-          padding: 10px;
-          font-size: 14px;
+          padding: 1rem;
+          font-size: 1.2rem;
           line-height: 1.35;
+          font-family: 'Open Sans', sans-serif;
         //   letter-spacing: 1px;
         //   font-weight: bold;
         }
       }
     }
   }
+
+.card {
+  border: .25rem solid #175602;
+  border-bottom: .5rem solid #175602;
+  border-radius: 1rem;
+  background-color: #daccc9;
+  margin: .25rem;
+  .article {
+    padding-top: 5%;
+    text-align: center;
+
+    h4{
+      font-size: 2rem;
+      margin:.25rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .tdWorker {
+      background-color: #113948;
+      color: white;
+      width:65%;
+      height:3rem;
+      margin:0 auto;
+    }
+    .tdImg {
+      width:100%;
+      img {
+        width:96%;      
+        border-radius: .5rem;
+        border:.125rem solid #773426;
+      }
+    }
+    .recommendation {
+      .flex(space-around, center, row);
+      .amount {
+        width:49%;
+        text-align: center;
+        padding:5%;
+        margin:5%;
+      }
+      .amount2 {
+        border-left:.125rem solid black;
+        width:49%;
+        text-align: center;
+        padding:5%;
+        margin:5%;
+      }
+    }
+  }
+}
