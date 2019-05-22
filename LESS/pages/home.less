@@ -35,13 +35,14 @@ header {
   .flex-align();
 
   .intro-text {
+    padding: 0 30px;
     font-size: 2rem;
     z-index: 2;
     font-weight: bold;
     color: @japanese-indigo;
     text-align: center;
     text-shadow: 0 2px 4px rgba(51, 51, 51, 0.8);
-    .resp-text(1.8rem; 1.6rem; 1.4rem);
+    .resp-text(1.6rem; 1.4rem; 1.2rem, 1.1rem);
   }
 
   .background {
@@ -51,12 +52,24 @@ header {
 
     .fas {
       font-size: 25rem;
-      .resp-text(25rem, 24rem, 22rem, 20rem);
+      .resp-text(22rem; 20rem; 18rem; 15rem);
       margin-top: -3rem;
       text-shadow: 0 2px 4px @shadow;
 
+      @media @break-lg {
+        margin-top: -2.2rem;
+      }
+
+      @media @break-md {
+        margin-top: -2.2rem;
+      }
+
       @media @break-sm {
-        margin-top: -2.5rem;
+        margin-top: 0;
+      }
+
+      @media @break-xs {
+        margin-top: 0;
       }
     }
   }
@@ -85,23 +98,20 @@ header {
       height: 400px;
       width: 100%;
       max-width: 400px;
-      min-width: 200px;
       flex-basis: 33.33%;
       max-width: 500px;
       perspective: 1000px;
-      margin: 10px;
+      margin: 2%;
 
       // Responsive Media Queries
       @media @break-sm {
         margin: 10px 0;
         flex-basis: 100%;
-        width: 100%;
         height: 200px;
       }
 
       @media @break-md {
-        height: 300px;
-        width: 100%;
+        height: 200px;
         flex-basis: 50%;
       }
 
@@ -119,6 +129,13 @@ header {
         box-shadow: 0 10px 20px @shadow;
         border-radius: 10px;
 
+        .card-heading {
+          padding: 1rem;
+          text-align: center;
+          font-size: 2rem;
+          .resp-text(2rem; 1.8rem; 1.4rem; 1.2rem);
+        }
+
         .card-front,
         .card-back {
           position: absolute;
@@ -135,7 +152,7 @@ header {
 
           .card-title {
             font-size: 1.6rem;
-            .resp-text(1.4rem, 1.2rem, 1.1rem);
+            .resp-text(1.4rem; 1.2rem; 1.1rem; 1rem);
             margin-bottom: 1rem;
           }
 
@@ -143,16 +160,19 @@ header {
           .far {
             color: @lincoln-green;
             font-size: 10rem;
+            .resp-text(8rem; 6rem; 5rem; 4rem)
           }
         }
 
         .card-back {
-          .flex-align();
+          .flex-align(@dir: column);
           transform: rotateY(180deg);
           z-index: 1;
 
           .card-text {
-            padding: 2rem;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            .resp-text(1.4rem; 1.2rem; 1.1rem; 1rem);
           }
         }
       }
