@@ -810,9 +810,6 @@ footer .brand span {
 .width-100 {
   width: 100%;
 }
-.border-bottom-grey {
-  border-bottom: 1px solid lightgrey;
-}
 .cards-container {
   display: flex;
   justify-content: space-evenly;
@@ -828,20 +825,18 @@ footer .brand span {
   }
 }
 .cards-container .card {
-  border-bottom: 1px solid lightgrey;
   display: flex;
   justify-content: space-between;
-  align-items: none;
+  align-items: center;
   flex-direction: column;
-  background-color: #fff;
   width: 100%;
   margin-bottom: 16px;
   padding: 24px;
 }
 .cards-container .card .workTitle {
   text-align: center;
-  font-size: 25px;
-  font-family: Didot, serif;
+  font-size: 3rem;
+  font-family: Didot, sans-serif;
 }
 .cards-container .card .worker {
   display: flex;
@@ -850,27 +845,55 @@ footer .brand span {
   flex-direction: column;
   margin-top: 15px;
 }
+.cards-container .card .worker .tip {
+  height: 2.5rem;
+  width: 60%;
+  color: white;
+  background-color: #113948;
+  margin: 0 auto;
+}
 .cards-container .card .worker .img-container {
   padding-bottom: 10px;
-  border-bottom: 1px solid lightgrey;
 }
 .cards-container .card .worker .img-container img {
   width: 100%;
 }
 .cards-container .card .worker p {
-  padding: 10px;
-  font-size: 14px;
+  padding: 1rem;
+  font-size: 1.2rem;
   line-height: 1.35;
+  font-family: 'Open Sans', sans-serif;
+}
+.card {
+  border: 0.25rem solid #175602;
+  border-bottom: 0.5rem solid #175602;
+  border-radius: 1rem;
+  background-color: #daccc9;
+  margin: 0.25rem;
 }
 .card .article {
   padding-top: 5%;
   text-align: center;
 }
+.card .article h4 {
+  font-size: 2rem;
+  margin: 0.25rem;
+  font-family: 'Open Sans', sans-serif;
+}
+.card .article .tdWorker {
+  background-color: #113948;
+  color: white;
+  width: 65%;
+  height: 3rem;
+  margin: 0 auto;
+}
 .card .article .tdImg {
   width: 100%;
 }
 .card .article .tdImg img {
-  width: 100%;
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 0.125rem solid #773426;
 }
 .card .article .recommendation {
   display: flex;
@@ -882,6 +905,14 @@ footer .brand span {
   width: 49%;
   text-align: center;
   padding: 5%;
+  margin: 5%;
+}
+.card .article .recommendation .amount2 {
+  border-left: 0.125rem solid black;
+  width: 49%;
+  text-align: center;
+  padding: 5%;
+  margin: 5%;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -926,10 +957,16 @@ body .container div nav a {
 }
 body .container .cta {
   padding: 2%;
+  font-family: 'Open Sans', sans-serif;
+}
+body .container .cta h2 {
+  padding-bottom: 0.75rem;
 }
 body .container .cta img {
-  width: 96%;
+  width: 94%;
+  margin: 0 auto;
   padding: 2%;
+  border-radius: 0.5rem;
 }
 body .container .footer {
   text-align: center;
@@ -1115,4 +1152,9 @@ body .article-open {
 }
 .navbar .nav-wrapper div .active {
   color: #e53118;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2.5rem;
+  }
 }
