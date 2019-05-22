@@ -15,31 +15,39 @@ function groceryButton() {
     var x = document.getElementById("groceryArticle");
     if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById('groceryWorker').textContent = "-Collapse-";
     } else {
       x.style.display = "none";
+      document.getElementById('groceryWorker').textContent = "Tip a Grocery Worker";
     }
 }
 function deliveryButton() {
     var x = document.getElementById("deliveryArticle");
     if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById('deliveryWorker').textContent = "-Collapse-";
     } else {
       x.style.display = "none";
+      document.getElementById('deliveryWorker').textContent = "Tip a Delivery Driver";
     }
 }
 function valetButton() {
     var x = document.getElementById("valetArticle");
     if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById('valetWorker').textContent = "-Collapse-";
     } else {
       x.style.display = "none";
+      document.getElementById('valetWorker').textContent = "Tip a Car Valet";
     }
 }
 function waiterButton() {
     var x = document.getElementById("waiterArticle");
     if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById('waiterWorker').textContent = "-Collapse-";
     } else {
       x.style.display = "none";
+      document.getElementById('waiterWorker').textContent = "Tip Waitstaff";
     }
 }
