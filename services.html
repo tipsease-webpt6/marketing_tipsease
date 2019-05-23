@@ -33,9 +33,12 @@
 
             <div class="cta">
                 <img src="assets/services-img.jpg">
-                <h2>People Matter.</h2>
-                <p>From that person filling your coffee in the morning to the folks who stocked the shelves at the grocery store, thousands of working Americans are doing what they can to bring food to their tables.</p>  
-                <p>Log in for our advanced features and Tip Calculator, See some of the ways you can power up the workers in your community below.</p>
+                <h2>People Matter</h2>
+                <p>From the person filling your coffee in the morning to the folks stocking the shelves at your grocery store, thousands of working Americans are doing what they can to bring food to your table.</p>  
+                <br >
+                <p>Now you can reward their efforts directly!</p>
+                <br >
+                <p>Please log in for advanced features and Tip Calculator.  You can see some of the ways to power up the workers in your community below.</p>
             </div>
             
             <!-- CARDS COMPONENT -->
@@ -50,7 +53,7 @@
                         </div>
                         <br >
                         <h3>Stocking Shelves Sounds Easy...</h3>
-                        <p>...but deciding what to put on the shelves is another matter entirely.  Food retailers operate on slim margins, even slimmer now with the all-out price-wars going on amongst all the major players.  Supermarket employees are worked very hard, and often treated very poorly, by management and customers alike.  Make someone's day, and make up for those lost thank-you's by giving a tip!</p>
+                        <p>...but keeping the products you want within reach is another matter entirely.  Supermarket employees work very hard, but are often treated poorly, by management and customers alike.  Make someone's day, and show your appreciation for all they do for you by giving a tip!</p>
                         <button class="tip" id="groceryWorker" onclick="groceryButton();">Tip a Grocery Worker</button>
                     </div>
                     <div class="article" id="groceryArticle">
@@ -63,6 +66,29 @@
                             <div class="amount"><p class="numbers">$2</p><p>for Carryout Service</p></div>
                         </div>
                         <button class="tdWorker">Find Your Store & Tip Employees Directly</button>
+                    </div>
+                </div>
+
+                <div class="card" data-work="delivery">
+                    <div class="workTitle">Delivery Drivers</div>
+                    <div class="worker">
+                        <div class="img-container">
+                            <img src="./assets/delivery.jpg" />
+                        </div>
+                        <br >
+                        <h3>The last mile is always the hardest...</h3>
+                        <p>...meaning, your box never magically arrives on your doorstep.  It's a team effort of hundreds of people, but most importantly, the person who places the box at your doorstep.  Drivers have to keep tight schedules, and sit in traffic for a long time every day.   Ensure your parcel's safe delivery and feel good by giving a tip!</p>
+                        <button class="tip" id="deliveryWorker" onclick="deliveryButton();">Tip Delivery Driver</button>
+                    </div>
+                    <div class="article" id="deliveryArticle">
+                        <div class="tdImg"><img alt="Sample of Worker View" src="./assets/tdDelivery.jpg"></div>
+                        <!-- img src credit FedEx Express -->
+                        <h4>We Recommend Tipping:</h4>
+                        <div class="recommendation">
+                            <div class="amount"><p class="numbers">$5-10</p><p>big items, per mover</p></div>
+                            <div class="amount"><p class="numbers">$5-25</p><p>yearly, for usual driver</p></div>
+                        </div>
+                        <button class="tdWorker">Find Your Driver & Tip Directly</button>
                     </div>
                 </div>
             
@@ -85,29 +111,6 @@
                         <div class="recommendation">
                             <div class="amount"><p class="numbers">$1-3</p><p>speed, weather, distance</p></div>
                             <div class="amount"><p class="numbers">$5</p><p>for cars valued $50k+</p></div>
-                        </div>
-                        <button class="tdWorker">Find Your Driver & Tip Directly</button>
-                    </div>
-                </div>
-
-                <div class="card" data-work="delivery">
-                    <div class="workTitle">Delivery Drivers</div>
-                    <div class="worker">
-                        <div class="img-container">
-                            <img src="./assets/delivery.jpg" />
-                        </div>
-                        <br >
-                        <h3>The last mile is always the hardest...</h3>
-                        <p>...meaning, your box never magically arrives on your doorstep.  It's a team effort of hundreds of people, but most importantly, the person who places the box at your doorstep.  Drivers have to keep tight schedules, and sit in traffic for a long time every day.   Ensure your parcel's safe delivery and feel good by giving a tip!</p>
-                        <button class="tip" id="deliveryWorker" onclick="deliveryButton();">Tip Delivery Driver</button>
-                    </div>
-                    <div class="article" id="deliveryArticle">
-                        <div class="tdImg"><img alt="Sample of Worker View" src="./assets/tdDelivery.jpg"></div>
-                        <!-- img src credit FedEx Express -->
-                        <h4>We Recommend Tipping:</h4>
-                        <div class="recommendation">
-                            <div class="amount"><p class="numbers">$5-10</p><p>big items, per mover</p></div>
-                            <div class="amount"><p class="numbers">$5-25</p><p>yearly, for usual driver</p></div>
                         </div>
                         <button class="tdWorker">Find Your Driver & Tip Directly</button>
                     </div>
