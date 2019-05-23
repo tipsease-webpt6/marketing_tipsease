@@ -679,6 +679,7 @@ footer .brand span {
 .intro-services .intro-card p {
   font-size: 2rem;
   padding: 1% 0;
+  line-height: 1.3;
 }
 @media only screen and (max-width: 1200px) {
   .intro-services .intro-card p {
