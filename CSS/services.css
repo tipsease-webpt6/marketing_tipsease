@@ -476,7 +476,7 @@ body .container {
   }
 }
 body .container .header {
-  padding-top: 5%;
+  padding-top: 100px;
 }
 body .container .header h1 {
   font-family: "Abril Fatface", serif;
@@ -640,4 +640,8 @@ body .container .footer {
 }
 .navbar .nav-wrapper div .active {
   color: #e53118;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
 }
