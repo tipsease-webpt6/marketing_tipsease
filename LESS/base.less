@@ -1,73 +1,115 @@
 // Typography
 body {
-    font-family: @font-primary;
-    font-weight: 500;
+  font-family: @font-primary;
+  font-weight: 500;
 }
 
 p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 h1 {
-    font-size: 6rem;
-    .resp-text(5rem; 4.5rem; 4rem; 3rem);
+  font-size: 6rem;
+  .resp-text(5rem; 4.5rem; 4rem; 3rem);
 }
 
 h2 {
-    font-size: 5.5rem;
-    .resp-text(4.5rem, 3.5rem, 3rem);
+  font-size: 5.5rem;
+  .resp-text(4.5rem; 3.5rem; 3rem; 2.5rem);
 }
 
 h3 {
-    font-size: 4.5rem;
-    .resp-text(3.5rem, 3rem, 2.5rem);
+  font-size: 4.5rem;
+  .resp-text(3.5rem; 3rem; 2.5rem; 2rem);
 }
 
 h4 {
-    font-size: 3.5rem;
-    .resp-text(3rem, 2.5rem, 2rem);
+  font-size: 3.5rem;
+  .resp-text(3rem; 2.5rem; 2rem; 1.5rem);
 }
 
 h5 {
-    font-size: 2.5rem;
-    .resp-text(2.25rem, 2rem, 1.75rem);
+  font-size: 2.5rem;
+  .resp-text(2.25rem; 2rem; 1.75rem; 1.25rem);
 }
 
 h6 {
-    font-size: 1.5rem;
-    .resp-text(1.5rem, 1.3rem, 1.2rem);
+  font-size: 1.5rem;
+  .resp-text(1.5rem; 1.3rem; 1.2rem; 1.1rem);
 }
 
 // Universal Layout Styles
 .container {
-    overflow: hidden;
-    width: 70%;
-    height: 100%;
-    margin: 0 auto;
+  overflow: hidden;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
 
-    @media @break-xl {
-        width: 80%;
-    }
+  @media @break-xl {
+    width: 80%;
+  }
 
-    @media @break-lg {
-        width: 90%;
-    }
+  @media @break-lg {
+    width: 90%;
+  }
 
-    @media @break-md {
-        width: 100%;
-    }
+  @media @break-md {
+    width: 100%;
+  }
 
-    @media @break-sm {
-        width: 100%;
-    }
+  @media @break-sm {
+    width: 100%;
+  }
 }
 
 // Branding Styles
 .brand {
-    color: @vermilion;
-    letter-spacing: .8rem;
+  font-family: @font-title;
+  color: @vermilion;
+  letter-spacing: .8rem;
 
-    span {
-        color: @lincoln-green;
+  span {
+    color: @light-green;
+  }
+}
+
+.img-container {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  background: @medium-vermilion;
+  box-shadow: 0 4px 8px #000;
+  border-radius: 3px;
+  transition: 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 6px 12px #000;
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px #000;
+  }
+
+  a {
+    font-size: 1.8rem;
+    overflow: hidden;
+    display: block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: @platinum;
+    .resp-text();
+
+    @media @break-xs {
+      padding: 0.5rem 1rem;
     }
+  }
 }

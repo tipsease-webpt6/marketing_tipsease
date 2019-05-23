@@ -16,8 +16,7 @@
 		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 	<!-- Site Styles -->
-	<link rel="stylesheet" href="/CSS/index.css">
-
+	<link rel="stylesheet" href="./CSS/index.css">
 </head>
 
 <body>
@@ -28,14 +27,19 @@
 
 	<nav class="navbar">
 		<div class="container nav-wrapper">
-			<div>
+			<div class="nav-brand">
 				<a href="#" class="brand">TIPS<span>EA$E</span></a>
 			</div>
 
-			<div>
+			<div class="nav-links">
 				<a href="./home.html" class="nav-link active">Home</a>
-				<a href="./aboutUs.html" class="nav-link">About Us</a>
+				<a href="./about.html" class="nav-link">About Us</a>
 				<a href="./services.html" class="nav-link">Services</a>
+				<div class="user-links">
+					<a href="./services.html" class="login"><i class="fas fa-sign-in-alt"></i> Login</a>
+					<span>|</span>
+					<a href="./services.html" class="sign-up"><i class="fas fa-user-plus"></i> Sign-up</a>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -76,43 +80,45 @@
 	</section>
 
 	<section class="features">
-		<div class="cards">
-			<div class="card">
-				<div class="card-inner">
-					<div class="card-front">
-						<div class="card-title">Flexible Tipping Options</div>
+		<div class="flip-cards">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<div class="flip-card-title">Flexible Tipping Options</div>
 						<i class="fas fa-credit-card"></i>
 					</div>
-					<div class="card-back">
-						<h4 class="card-heading">Pay However You Want!</h4>
-						<p class="card-text">We accept a wide variety of payment options so that we can make sure quality service
+					<div class="flip-card-back">
+						<h4 class="flip-card-heading">Pay However You Want!</h4>
+						<p class="flip-card-text">We accept a wide variety of payment options so that we can make sure quality
+							service
 							can
 							be rewarded at your convenience!</p>
 					</div>
 				</div>
 			</div>
-			<div class="card">
-				<div class="card-inner">
-					<div class="card-front">
-						<div class="card-title">Automatic Tip Calculator</div>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<div class="flip-card-title">Automatic Tip Calculator</div>
 						<i class="fas fa-calculator"></i>
 					</div>
-					<div class="card-back">
-						<h4 class="card-heading">Hate math?</h4>
-						<p class="card-text">So do we, but we've already done the math for you so don't worry about it! Just input
+					<div class="flip-card-back">
+						<h4 class="flip-card-heading">Hate math?</h4>
+						<p class="flip-card-text">So do we, but we've already done the math for you so don't worry about it! Just
+							input
 							the cost of service then select a percentage and tip away. Or use our recommended tip value!</p>
 					</div>
 				</div>
 			</div>
-			<div class="card">
-				<div class="card-inner">
-					<div class="card-front">
-						<div class="card-title">Serving Many Industries</div>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<div class="flip-card-title">Serving Many Industries</div>
 						<i class="far fa-handshake"></i>
 					</div>
-					<div class="card-back">
-						<h4 class="card-heading">From Restaurants to Valet Parking</h4>
-						<p class="card-text">We have a network full of service workers from various industries, did that worker
+					<div class="flip-card-back">
+						<h4 class="flip-card-heading">From Restaurants to Valet Parking</h4>
+						<p class="flip-card-text">We have a network full of service workers from various industries, did that worker
 							exemplify outstanding service? Just look them up and tip away!</p>
 					</div>
 				</div>

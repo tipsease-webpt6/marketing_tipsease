@@ -1,0 +1,64 @@
+#about {
+
+  .header-about {
+    background: @japanese-indigo;
+    padding: 4%;
+    height: 200px;
+
+    .brand {
+      text-shadow: 2px 4px 4px @shadow;
+    }
+  }
+
+  .team {
+    background: url('/assets/funky-lines.png');
+    height: 100%;
+    padding: 8% 0;
+
+    h2 {
+      color: @japanese-indigo;
+      text-align: center;
+      padding-bottom: 4%;
+    }
+  }
+
+  .flip-cards {
+    height: 100%;
+
+    .flip-card {
+      @media @break-md {
+        height: 400px;
+      }
+    }
+
+    .flip-card-front {
+      border-radius: 10px;
+      background-size: 400px 400px;
+      background-repeat: no-repeat;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .flip-card-back {
+      .social-links {
+        .flex-align();
+        margin-top: 1rem;
+      }
+
+      .fab {
+        font-size: 2rem;
+        margin: 0 0.5rem;
+      }
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: @vermilion;
+        }
+      }
+    }
+  }
+}
