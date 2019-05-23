@@ -6,6 +6,8 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 };
 
+
+
 document.getElementById('groceryArticle').style.display='none';
 document.getElementById('deliveryArticle').style.display='none';
 document.getElementById('valetArticle').style.display='none';
