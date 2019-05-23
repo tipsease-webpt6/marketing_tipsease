@@ -1,0 +1,60 @@
+.services {
+  background: url('/assets/funky-lines.png');
+  background-attachment: fixed;
+}
+
+.header-services {
+  background: @japanese-indigo;
+  height: 200px;
+
+  .brand {
+    text-shadow: 2px 4px 4px @shadow;
+  }
+}
+
+.intro-services {
+  width: 100%;
+  position: relative;
+  padding: 2% 10%;
+  font-family: 'Open Sans', sans-serif;
+
+  .intro-card {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 4%;
+    color: @japanese-indigo;
+
+    p {
+      font-size: 2rem;
+      .resp-text(1.75rem; 1.5rem; 1.25rem; 1rem);
+      padding: 1% 0;
+    }
+
+    h2 {
+      padding-bottom: 4%;
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 2%;
+}
+
+.article {
+  position: relative;
+  overflow: hidden;
+  display: none;
+
+  .recommendation {
+    .numbers {
+      font-family: 'Didot', sans-serif;
+      font-size: 3rem;
+    }
+  }
+}
+
+.article-open {
+  display: inline-block;
+}

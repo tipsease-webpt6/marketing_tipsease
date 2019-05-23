@@ -1,153 +1,208 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TipsEa$e - Services</title>
-        <link rel="stylesheet" href="./CSS/services.css">
-        <!-- Greensock Animations CDN: -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-        <!-- Fonts CDN: -->
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans&display=swap" rel="stylesheet">        <script src="./components/services.js" async></script>
 
-	</head>
-	<body>
-        <!-- Body in here -->
-        <nav class="navbar">
-            <div class="container nav-wrapper">
-                <div>
-                    <a href="#" class="brand">TIPS<span>EA$E</span></a>
-                </div>
-    
-                <div>
-                    <a href="./home.html" class="nav-link active">Home</a>
-                    <a href="./aboutUs.html" class="nav-link">About Us</a>
-                    <a href="./services.html" class="nav-link">Services</a>
-                </div>
-            </div>
-        </nav>
-        
-        <div class="container">
-            <div class="header">
-                <h1>TIPS<span>EA$E</span></h1>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-            <div class="cta">
-                <img src="assets/services-img.jpg">
-                <h2>People Matter</h2>
-                <p>From the person filling your coffee in the morning to the folks stocking the shelves at your grocery store, thousands of working Americans are doing what they can to bring food to your table.</p>  
-                <br >
-                <p>Now you can reward their efforts directly!</p>
-                <br >
-                <p>Please log in for advanced features and Tip Calculator.  You can see some of the ways to power up the workers in your community below.</p>
-            </div>
-            
-            <!-- CARDS COMPONENT -->
-            <div class="cards-container">
+  <title>TipsEa$e - Services</title>
 
-                <!-- CARD COMPONENTS -->
-                <div class="card" data-work="grocery">
-                    <div class="workTitle">Grocery Workers</div>
-                    <div class="worker">
-                        <div class="img-container">
-                            <img src="./assets/grocery.jpg" />
-                        </div>
-                        <br >
-                        <h3>Stocking Shelves Sounds Easy...</h3>
-                        <p>...but keeping the products you want within reach is another matter entirely.  Supermarket employees work very hard, but are often treated poorly, by management and customers alike.  Make someone's day, and show your appreciation for all they do for you by giving a tip!</p>
-                        <button class="tip" id="groceryWorker" onclick="groceryButton();">Tip a Grocery Worker</button>
-                    </div>
-                    <div class="article" id="groceryArticle">
-                        <div class="tdImg"><img alt="Sample of Worker View" src="./assets/tdGrocery.jpg"></div>
-                        <!-- img src credit UFCW99 -->
-                        <h4>We Recommend Tipping:</h4>
-                        <div class="recommendation">
-                            <div class="amount"><p class="numbers">$3</p><p>per special request</p></div>
-                            <!-- <div class="vl"></div> -->
-                            <div class="amount"><p class="numbers">$2</p><p>for Carryout Service</p></div>
-                        </div>
-                        <button class="tdWorker">Find Your Store & Tip Employees Directly</button>
-                    </div>
-                </div>
+  <!-- Fonts CDN: -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans" rel="stylesheet">
 
-                <div class="card" data-work="delivery">
-                    <div class="workTitle">Delivery Drivers</div>
-                    <div class="worker">
-                        <div class="img-container">
-                            <img src="./assets/delivery.jpg" />
-                        </div>
-                        <br >
-                        <h3>The last mile is always the hardest...</h3>
-                        <p>...meaning, your box never magically arrives on your doorstep.  It's a team effort of hundreds of people, but most importantly, the person who places the box at your doorstep.  Drivers have to keep tight schedules, and sit in traffic for a long time every day.   Ensure your parcel's safe delivery and feel good by giving a tip!</p>
-                        <button class="tip" id="deliveryWorker" onclick="deliveryButton();">Tip Delivery Driver</button>
-                    </div>
-                    <div class="article" id="deliveryArticle">
-                        <div class="tdImg"><img alt="Sample of Worker View" src="./assets/tdDelivery.jpg"></div>
-                        <!-- img src credit FedEx Express -->
-                        <h4>We Recommend Tipping:</h4>
-                        <div class="recommendation">
-                            <div class="amount"><p class="numbers">$5-10</p><p>big items, per mover</p></div>
-                            <div class="amount"><p class="numbers">$5-25</p><p>yearly, for usual driver</p></div>
-                        </div>
-                        <button class="tdWorker">Find Your Driver & Tip Directly</button>
-                    </div>
-                </div>
-            
-                <div class="card" data-work="valet">
-                    <div class="workTitle">Valet Attendants</div>
-                    <div class="worker">
-                        <div class="img-container">
-                            <img src="./assets/valet.jpg" />
-                            <!-- img src credit North Scottsdale Lifestyle Magazine -->
-                        </div>
-                        <br >
-                        <h3>Did you thank your Valet..?</h3>
-                        <p>...handing over those keys when you're in a hurry can be the ultimate convenience, but remember that the valet is paid like they are doing nothing all day.  Don't expect a hurry up without compensating your person fairly. Make someone's day, and reward that hustle by giving a tip!</p>
-                        <button class="tip" id="valetWorker"  onclick="valetButton();">Tip a Car Valet</button>
-                    </div>
-                    <div class="article" id="valetArticle">
-                        <div class="tdImg"><img alt="Sample of Worker View" src="./assets/tdValet.jpg"></div>
-                        <!-- img src credit American Valet -->
-                        <h4>We Recommend Tipping:</h4>
-                        <div class="recommendation">
-                            <div class="amount"><p class="numbers">$1-3</p><p>speed, weather, distance</p></div>
-                            <div class="amount"><p class="numbers">$5</p><p>for cars valued $50k+</p></div>
-                        </div>
-                        <button class="tdWorker">Find Your Driver & Tip Directly</button>
-                    </div>
-                </div>
-            
-                <div class="card" data-work="waiter">
-                    <div class="workTitle">Wait Staff</div>
-                    <div class="worker">
-                        <div class="img-container">
-                            <img src="./assets/waiter.jpg" />
-                        </div>
-                        <br >
-                        <h3>Below Minimum Wage...</h3>
-                        <p>...that's the hourly pay of many waiters and waitresses.  Even today, in 2019, restaurants pay waitstaff $3-4 less than the state's minimum hourly wage.  Their work isn't worthless, and they deserve a living wage as well.  Make sure your waiter can afford food, and reward anything extra by tipping superfluously!</p>
-                        <button class="tip" id="waiterWorker" onclick="waiterButton();">Tip Waitstaff</button>
-                    </div>
-                    <div class="article" id="waiterArticle">
-                        <div class="tdImg"><img alt="Sample of Worker View" src="./assets/tdWaiter.jpg"></div>
-                        <!-- img src credit Ready Georgia -->
-                        <h4>We Recommend Tipping:</h4>
-                        <div class="recommendation">
-                            <div class="amount"><p class="numbers">20%</p><p>for good, average service</p></div>
-                            <div class="amount"><p class="numbers">$1-2</p><p>per drink while at the bar</p></div>
-                        </div>
-                        <button class="tdWorker">Find Your Waiter, Waitress or Bartender & Tip Directly</button>
-                    </div>
-                </div>
-            </div>
+  <!-- Font-Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-            <div class="footer">
-                <p>Copyright TIPSEA$E <script type="text/javascript">
-                    document.write(new Date().getFullYear());
-                  </script></p>
-            </div>
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="./CSS/index.css">
+</head>
+
+<body class="services">
+
+  <header class="header-services">
+    <h1 class="brand">SERV<span>ICES</span></h1>
+  </header>
+
+  <nav class="navbar">
+    <div class="container nav-wrapper">
+      <div class="nav-brand">
+        <a href="#" class="brand">TIPS<span>EA$E</span></a>
+      </div>
+
+      <div class="nav-links">
+        <a href="./home.html" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link">About Us</a>
+        <a href="./services.html" class="nav-link active">Services</a>
+        <div class="user-links">
+          <a href="./services.html" class="login"><i class="fas fa-sign-in-alt"></i> Login</a>
+          <span>|</span>
+          <a href="./services.html" class="sign-up"><i class="fas fa-user-plus"></i> Sign-up</a>
         </div>
+      </div>
+    </div>
+  </nav>
 
-        <!-- Scripts go here -->
+  <div class="intro-services">
+    <div class="container">
+      <div class="intro-card">
+        <h2>People Matter</h2>
+        <p>From the person filling your coffee in the morning to the folks stocking the shelves at your grocery
+          store, thousands of working Americans are doing what they can to bring food to your table.</p>
 
-	</body>
+        <p>Now you can reward their efforts directly!</p>
+
+        <p>Please log in for advanced features and Tip Calculator. You can see some of the ways to power up the
+          workers in your community below.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARDS COMPONENT -->
+  <div class="cards">
+    <!-- CARD COMPONENTS -->
+    <div class="card" data-work="grocery">
+      <div class="workTitle">Grocery Workers</div>
+      <div class="worker">
+        <div class="img-container">
+          <img src="./assets/grocery.jpg" />
+        </div>
+        <br>
+        <h3>Stocking Shelves Sounds Easy...</h3>
+        <p>...but keeping the products you want within reach is another matter entirely. Supermarket
+          employees work very hard, but are often treated poorly, by management and customers alike. Make
+          someone's day, and show your appreciation for all they do for you by giving a tip!</p>
+        <button class="tip" id="groceryWorker" onclick="groceryButton();">Tip a Grocery Worker</button>
+      </div>
+      <div class="article" id="groceryArticle">
+        <div class="tdImg"><img alt="Sample of Worker View" src="./assets/tdGrocery.jpg"></div>
+        <!-- img src credit UFCW99 -->
+        <h4>We Recommend Tipping:</h4>
+        <div class="recommendation">
+          <div class="amount">
+            <p class="numbers">$3</p>
+            <p>per special request</p>
+          </div>
+          <!-- <div class="vl"></div> -->
+          <div class="amount">
+            <p class="numbers">$2</p>
+            <p>for Carryout Service</p>
+          </div>
+        </div>
+        <button class="tdWorker">Find Your Store & Tip Employees Directly</button>
+      </div>
+    </div>
+
+    <div class="card" data-work="delivery">
+      <div class="workTitle">Delivery Drivers</div>
+      <div class="worker">
+        <div class="img-container">
+          <img src="./assets/delivery.jpg" />
+        </div>
+        <br>
+        <h3>The last mile is always the hardest...</h3>
+        <p>...meaning, your box never magically arrives on your doorstep. It's a team effort of hundreds of
+          people, but most importantly, the person who places the box at your doorstep. Drivers have to
+          keep tight schedules, and sit in traffic for a long time every day. Ensure your parcel's safe
+          delivery and feel good by giving a tip!</p>
+        <button class="tip" id="deliveryWorker" onclick="deliveryButton();">Tip Delivery Driver</button>
+      </div>
+      <div class="article" id="deliveryArticle">
+        <div class="tdImg"><img alt="Sample of Worker View" src="./assets/tdDelivery.jpg"></div>
+        <!-- img src credit FedEx Express -->
+        <h4>We Recommend Tipping:</h4>
+        <div class="recommendation">
+          <div class="amount">
+            <p class="numbers">$5-10</p>
+            <p>big items, per mover</p>
+          </div>
+          <div class="amount">
+            <p class="numbers">$5-25</p>
+            <p>yearly, for usual driver</p>
+          </div>
+        </div>
+        <button class="tdWorker">Find Your Driver & Tip Directly</button>
+      </div>
+    </div>
+
+    <div class="card" data-work="valet">
+      <div class="workTitle">Valet Attendants</div>
+      <div class="worker">
+        <div class="img-container">
+          <img src="./assets/valet.jpg" />
+          <!-- img src credit North Scottsdale Lifestyle Magazine -->
+        </div>
+        <br>
+        <h3>Did you thank your Valet..?</h3>
+        <p>...handing over those keys when you're in a hurry can be the ultimate convenience, but remember
+          that the valet is paid like they are doing nothing all day. Don't expect a hurry up without
+          compensating your person fairly. Make someone's day, and reward that hustle by giving a tip!</p>
+        <button class="tip" id="valetWorker" onclick="valetButton();">Tip a Car Valet</button>
+      </div>
+      <div class="article" id="valetArticle">
+        <div class="tdImg"><img alt="Sample of Worker View" src="./assets/tdValet.jpg"></div>
+        <!-- img src credit American Valet -->
+        <h4>We Recommend Tipping:</h4>
+        <div class="recommendation">
+          <div class="amount">
+            <p class="numbers">$1-3</p>
+            <p>speed, weather, distance</p>
+          </div>
+          <div class="amount">
+            <p class="numbers">$5</p>
+            <p>for cars valued $50k+</p>
+          </div>
+        </div>
+        <button class="tdWorker">Find Your Driver & Tip Directly</button>
+      </div>
+    </div>
+
+    <div class="card" data-work="waiter">
+      <div class="workTitle">Wait Staff</div>
+      <div class="worker">
+        <div class="img-container">
+          <img src="./assets/waiter.jpg" />
+        </div>
+        <br>
+        <h3>Below Minimum Wage...</h3>
+        <p>...that's the hourly pay of many waiters and waitresses. Even today, in 2019, restaurants pay
+          waitstaff $3-4 less than the state's minimum hourly wage. Their work isn't worthless, and they
+          deserve a living wage as well. Make sure your waiter can afford food, and reward anything extra
+          by tipping superfluously!</p>
+        <button class="tip" id="waiterWorker" onclick="waiterButton();">Tip Waitstaff</button>
+      </div>
+      <div class="article" id="waiterArticle">
+        <div class="tdImg"><img alt="Sample of Worker View" src="./assets/tdWaiter.jpg"></div>
+        <!-- img src credit Ready Georgia -->
+        <h4>We Recommend Tipping:</h4>
+        <div class="recommendation">
+          <div class="amount">
+            <p class="numbers">20%</p>
+            <p>for good, average service</p>
+          </div>
+          <div class="amount">
+            <p class="numbers">$1-2</p>
+            <p>per drink while at the bar</p>
+          </div>
+        </div>
+        <button class="tdWorker">Find Your Waiter, Waitress or Bartender & Tip Directly</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <script type="text/javascript">
+        document.write(new Date().getFullYear());
+
+      </script> &nbsp; - &nbsp; <span class="brand">TIPS<span>EA$E</span></span></p>
+  </footer>
+
+  <!-- Greensock Animations CDN: -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+  <script src="./components/services.js" async></script>
+
+</body>
+
 </html>
