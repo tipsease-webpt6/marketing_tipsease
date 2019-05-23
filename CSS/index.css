@@ -341,10 +341,10 @@ h6 {
 }
 .brand {
   color: #e53118;
-  letter-spacing: .8rem;
+  letter-spacing: 0.8rem;
 }
 .brand span {
-  color: #90ee90;
+  color: lightgreen;
 }
 /* HEADER */
 header {
@@ -364,7 +364,7 @@ header .page-title {
 }
 header .tagline {
   font-size: 1.5rem;
-  color: #90ee90;
+  color: lightgreen;
 }
 @media only screen and (max-width: 1200px) {
   header .tagline {
@@ -434,7 +434,7 @@ header .tagline strong {
 .intro .background {
   position: absolute;
   z-index: 1;
-  color: #90ee90;
+  color: lightgreen;
 }
 .intro .background .fas {
   font-size: 25rem;
@@ -606,7 +606,7 @@ header .tagline strong {
 }
 .features .cards .card .card-inner .card-front .fas,
 .features .cards .card .card-inner .card-front .far {
-  color: #90ee90;
+  color: lightgreen;
   font-size: 10rem;
 }
 @media only screen and (max-width: 1200px) {
