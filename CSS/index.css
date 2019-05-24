@@ -420,9 +420,17 @@ header {
   background: url('/assets/home-img.jpg');
   background-size: cover;
   background-attachment: fixed;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 header .page-title {
@@ -465,9 +473,17 @@ header .tagline strong {
   padding: 2% 0;
   background: url('/assets/funky-lines.png');
   background-attachment: fixed;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 .intro .intro-text {
@@ -561,9 +577,17 @@ header .tagline strong {
   background: url('/assets/cta-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 10% 0;
 }
@@ -642,9 +666,17 @@ footer {
   color: #eae3e1;
   background: #113948;
   height: 60px;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 footer .brand {
@@ -756,9 +788,17 @@ footer .brand span {
   height: 100%;
 }
 #about .flip-cards .flip-card-back .social-links {
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-top: 1rem;
 }
@@ -783,16 +823,32 @@ footer .brand span {
 .navbar .nav-wrapper {
   height: 100%;
   width: 100%;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 @media only screen and (max-width: 768px) {
   .navbar .nav-wrapper {
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
@@ -916,9 +972,17 @@ footer .brand span {
   color: #e53118;
 }
 .navbar .nav-wrapper div {
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 .carousel {
@@ -933,9 +997,17 @@ footer .brand span {
   display: none;
 }
 .carousel .active {
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 .carousel .next,
@@ -956,9 +1028,17 @@ footer .brand span {
 }
 .cards {
   position: relative;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   width: 100%;
   padding: 2% 0;
@@ -968,9 +1048,17 @@ footer .brand span {
   color: #eae3e1;
   width: 40%;
   min-height: 700px;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 4%;
   border-radius: 1rem;
@@ -1015,9 +1103,17 @@ footer .brand span {
   }
 }
 .card .worker {
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
   justify-content: space-between;
+  -webkit-box-align: space-between;
+  -ms-flex-align: space-between;
   align-items: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 1.2rem;
 }
@@ -1076,9 +1172,17 @@ footer .brand span {
 }
 .card .worker .img-container {
   padding-bottom: 10px;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 .card .worker .img-container img {
@@ -1139,9 +1243,17 @@ footer .brand span {
   border: .125rem solid #773426;
 }
 .card .article .recommendation {
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 .card .article .recommendation .amount {
@@ -1157,9 +1269,17 @@ footer .brand span {
 }
 .flip-cards {
   color: white;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   flex-wrap: wrap;
   height: 100%;
@@ -1176,8 +1296,10 @@ footer .brand span {
   height: 400px;
   width: 100%;
   max-width: 400px;
+  -ms-flex-preferred-size: 33.33%;
   flex-basis: 33.33%;
   max-width: 500px;
+  -webkit-perspective: 1000px;
   perspective: 1000px;
   margin: 2%;
 }
@@ -1195,6 +1317,7 @@ footer .brand span {
   }
 }
 .flip-cards .flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 .flip-cards .flip-card .flip-card-inner {
@@ -1202,8 +1325,14 @@ footer .brand span {
   position: relative;
   width: 100%;
   height: 100%;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
   transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-box-shadow: 0 10px 20px rgba(51, 51, 51, 0.8);
   box-shadow: 0 10px 20px rgba(51, 51, 51, 0.8);
   border-radius: 10px;
 }
@@ -1238,11 +1367,21 @@ footer .brand span {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: rotateX(0deg);
 }
 .flip-cards .flip-card .flip-card-inner .flip-card-front {
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
@@ -1302,10 +1441,19 @@ footer .brand span {
   }
 }
 .flip-cards .flip-card .flip-card-inner .flip-card-back {
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   z-index: 1;
 }
