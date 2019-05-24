@@ -17,15 +17,17 @@
     margin: 2%;
 
     // Responsive Media Queries
-    @media @break-sm {
-      margin: 10px 0;
-      flex-basis: 100%;
-      height: 200px;
+    @media @break-md {
+      height: 300px;
+      width: 45%;
+      flex-basis: 50%;
     }
 
-    @media @break-md {
+    @media @break-sm {
+      margin: 10px 0;
+      width: 100%;
+      flex-basis: 100%;
       height: 200px;
-      flex-basis: 50%;
     }
 
     &:hover .flip-card-inner {

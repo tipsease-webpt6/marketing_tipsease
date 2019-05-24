@@ -1296,17 +1296,19 @@ footer .brand span {
   perspective: 1000px;
   margin: 2%;
 }
+@media only screen and (max-width: 992px) {
+  .flip-cards .flip-card {
+    height: 300px;
+    width: 45%;
+    flex-basis: 50%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .flip-cards .flip-card {
     margin: 10px 0;
+    width: 100%;
     flex-basis: 100%;
     height: 200px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .flip-cards .flip-card {
-    height: 200px;
-    flex-basis: 50%;
   }
 }
 .flip-cards .flip-card:hover .flip-card-inner {
