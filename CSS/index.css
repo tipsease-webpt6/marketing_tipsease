@@ -1452,9 +1452,7 @@ footer .brand span {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateZ(0);
   z-index: 1;
 }
 .flip-cards .flip-card .flip-card-inner .flip-card-back .flip-card-text {
