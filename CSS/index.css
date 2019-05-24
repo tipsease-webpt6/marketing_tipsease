@@ -1439,6 +1439,7 @@ footer .brand span {
   }
 }
 .flip-cards .flip-card .flip-card-inner .flip-card-back {
+  background: transparent;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
