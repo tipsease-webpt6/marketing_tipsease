@@ -1,0 +1,160 @@
+/* HEADER */
+header {
+  height: 90vh;
+  background: url('/assets/home-img.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  .flex-align(@dir: column);
+
+  .page-title {
+    font-family: @font-title;
+    color: @vermilion;
+    margin-bottom: 2rem;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+    .resp-text(1.5rem, 1.3rem, 1.2rem, 1rem);
+    color: @light-green;
+
+    strong {
+      font-weight: bold;
+      color: @vermilion;
+    }
+  }
+}
+
+/* INTRODUCTION */
+.intro {
+  position: relative;
+  height: 600px;
+  padding: 2% 0;
+  background: url('/assets/funky-lines.png');
+  background-attachment: fixed;
+  .flex-align();
+
+  .intro-text {
+    padding: 0 30px;
+    font-size: 2rem;
+    z-index: 2;
+    font-weight: bold;
+    color: @japanese-indigo;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(51, 51, 51, 0.8);
+    .resp-text(1.6rem; 1.4rem; 1.2rem, 1.1rem);
+  }
+
+  .background {
+    position: absolute;
+    z-index: 1;
+    color: @light-green;
+
+    .fas {
+      font-size: 25rem;
+      .resp-text(22rem; 20rem; 18rem; 15rem);
+      margin-top: -3rem;
+      text-shadow: 0 2px 4px @shadow;
+
+      @media @break-lg {
+        margin-top: -2.2rem;
+      }
+
+      @media @break-md {
+        margin-top: -2.2rem;
+      }
+
+      @media @break-sm {
+        margin-top: 0;
+      }
+
+      @media @break-xs {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+/* FEATURE SECTION */
+.features {
+  overflow: hidden;
+  background: @medium-vermilion;
+  padding: 8% 0;
+}
+
+/* Call to Action */
+.cta {
+  position: relative;
+  background: url('/assets/cta-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  .flex-align(@dir: column);
+  padding: 10% 0;
+
+  @media @break-sm {
+    padding: 30% 0;
+  }
+
+  @media @break-lg {
+    padding: 25% 0;
+  }
+
+  @media @break-xl {
+    padding: 20% 0;
+  }
+
+  .cta-text {
+    color: @platinum;
+    margin-bottom: 2%;
+    text-shadow: 0 0 4px @medium-vermilion;
+    text-align: center;
+  }
+
+  .cta-btn {
+    position: relative;
+    cursor: pointer;
+    background: @medium-vermilion;
+    box-shadow: 0 4px 8px #000;
+    border-radius: 3px;
+    transition: 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 6px 12px #000;
+      transform: translateY(-3px);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px #000;
+    }
+
+    a {
+      font-size: 1.8rem;
+      overflow: hidden;
+      display: block;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      color: @platinum;
+      .resp-text();
+
+      @media @break-xs {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+/* FOOTER */
+footer {
+  color: @platinum;
+  background: @japanese-indigo;
+  height: 60px;
+  .flex-align();
+
+  .brand {
+    letter-spacing: 0.4rem;
+
+    span {
+      color: lightgreen;
+    }
+  }
+}

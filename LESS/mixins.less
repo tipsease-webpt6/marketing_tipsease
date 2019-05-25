@@ -1,0 +1,32 @@
+.flex-align(@justify: center; @align: center; @dir: row) {
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: @justify;
+    -ms-flex-pack: @justify;
+    justify-content: @justify;
+    -webkit-box-align: @align;
+    -ms-flex-align: @align;
+    align-items: @align;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: @dir;
+    flex-direction: @dir;
+}
+
+.resp-text(@lg-font: 1.6rem; @md-font: 1.4rem; @sm-font: 1.2rem; @xs-font: 1.1rem) {
+    @media @break-lg {
+        font-size: @lg-font;
+    }
+
+    @media @break-md {
+        font-size: @md-font;
+    }
+
+    @media @break-sm {
+        font-size: @sm-font;
+    }
+
+    @media @break-xs {
+        font-size: @xs-font;
+    }
+}

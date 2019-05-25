@@ -1,0 +1,146 @@
+.cards {
+  position: relative;
+  .flex-align(center; flex-start);
+  width: 100%;
+  padding: 2% 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  color: @platinum;
+  width: 40%;
+  min-height: 700px;
+  .flex-align(center, center, column);
+  padding: 4%;
+  border-radius: 1rem;
+  background-color: @shadow;
+  margin: 1%;
+  box-shadow: 0 6px 12px @shadow;
+
+  @media @break-lg {
+    width: 80%;
+    min-height: 500px;
+  }
+
+  @media @break-sm {
+    width: 100%;
+  }
+
+
+  .workTitle {
+    text-align: center;
+    font-family: @font-primary;
+    font-size: 3rem;
+    .resp-text(2.5rem; 2rem; 1.5rem; 1.2rem);
+  }
+
+  .worker {
+    .flex-align(space-between, space-between, column);
+    margin-top: 1.2rem;
+
+    .tip {
+      height: 2.5rem;
+      width: 60%;
+      color: white;
+      background-color: @medium-vermilion;
+      margin: 0 auto;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 4px 8px @shadow;
+      border-radius: 3px;
+      transition: 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 6px 12px @shadow;
+        transform: translateY(-3px);
+      }
+
+      &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px @shadow;
+      }
+
+      a {
+        font-size: 1.8rem;
+        overflow: hidden;
+        display: block;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        color: @platinum;
+        .resp-text();
+
+        @media @break-xs {
+          padding: 0.5rem 1rem;
+        }
+
+      }
+    }
+
+    .img-container {
+      padding-bottom: 10px;
+      .flex-align();
+
+      img {
+        width: 50%;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.35;
+      font-family: 'Open Sans', sans-serif;
+      padding: 1rem 0;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      .resp-text(2rem; 1.75rem; 1.5rem; 1.2rem);
+    }
+  }
+
+  .article {
+    padding-top: 5%;
+    text-align: center;
+
+    h4 {
+      font-size: 2rem;
+      margin: .25rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .tdWorker {
+      background-color: #113948;
+      color: white;
+      width: 65%;
+      height: 3rem;
+      margin: 0 auto;
+    }
+
+    .tdImg {
+      width: 100%;
+      margin-bottom: 5%;
+
+      img {
+        width: 96%;
+        border-radius: .5rem;
+        border: .125rem solid #773426;
+      }
+    }
+
+    .recommendation {
+      .flex-align(space-around, center, row);
+
+      .amount {
+        color: @japanese-indigo;
+        border: .125rem solid black;
+        border-radius: .5rem;
+        width: 49%;
+        text-align: center;
+        padding: 5%;
+        vertical-align: center;
+        margin: 5%;
+        background-color: white;
+      }
+    }
+  }
+}

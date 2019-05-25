@@ -1,0 +1,123 @@
+/* NAVIGATION */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  height: 5rem;
+  background: @japanese-indigo;
+
+  .nav-wrapper {
+    height: 100%;
+    width: 100%;
+    .flex-align(space-around);
+
+    @media @break-sm {
+      .flex-align(@dir: column);
+    }
+
+    .nav-brand {
+      .brand {
+        text-decoration: none;
+        font-family: @font-title;
+        font-size: 2rem;
+        .resp-text(1.6rem, 1.4rem, 1.2rem, 1rem);
+
+        @media @break-sm {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .nav-links {
+
+      .nav-link,
+      .login,
+      .sign-up {
+        position: relative;
+        color: @medium-vermilion;
+        text-decoration: none;
+
+        &:hover {
+          color: @vermilion;
+        }
+      }
+
+      .user-links,
+      .nav-link {
+        &:not(:first-child) {
+          margin-left: 3rem;
+        }
+
+        @media @break-sm {
+          &:not(:first-child) {
+            margin-left: 1rem;
+          }
+        }
+      }
+
+      .nav-link {
+        font-size: 1.3rem;
+        .resp-text(1.3rem, 1.25rem, 1.2rem, 1rem);
+
+        &:before {
+          content: "";
+          position: absolute;
+          background-color: @vermilion;
+          width: 100%;
+          height: 4px;
+          bottom: -0.5rem;
+          right: 0;
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out 0s;
+          border-radius: 4px;
+        }
+
+        &:hover:before {
+          visibility: visible;
+          transform: scaleX(1);
+        }
+      }
+
+      .user-links {
+        span {
+          color: @medium-vermilion;
+          margin: 0 0.5rem;
+        }
+
+        a {
+          &:before {
+            content: "";
+            position: absolute;
+            background-color: @vermilion;
+            width: 100%;
+            height: 3px;
+            bottom: -0.5rem;
+            right: 0;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+            border-radius: 4px;
+          }
+
+          &:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
+          }
+
+          .fas {
+            margin-right: 2px;
+          }
+        }
+      }
+
+      .active {
+        color: @vermilion;
+      }
+    }
+
+    div {
+      .flex-align();
+    }
+  }
+}
