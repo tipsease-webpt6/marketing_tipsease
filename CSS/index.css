@@ -1285,8 +1285,9 @@ footer .brand span {
 }
 .flip-cards .flip-card {
   background-color: transparent;
-  width: 500px;
+  max-width: 500px;
   height: 400px;
+  width: 33.33%;
   flex-basis: 33.33%;
   perspective: 1000px;
   margin: 2%;
